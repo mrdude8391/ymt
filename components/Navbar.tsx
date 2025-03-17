@@ -9,11 +9,15 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <nav>
-        <div className="flexBetween max-container padding-container relative z-30 py-5 ">
+      <nav className="sticky w-full top-0 left-0 z-30">
+        <div className="flexBetween relative max-container padding-container z-30 py-3 bg-white">
           <Link href="/">
-            <Image src="/ymt-logo.png" alt="logo" width={74} height={74} />
+            <div className="flexCenter gap-5">
+              <Image src="/ymt-logo.png" alt="logo" width={54} height={54} />
+              <p className="">YMT Lion Dance</p>
+            </div>
           </Link>
+
           <ul className="hidden h-full gap-12 lg:flex">
             {NAV_LINKS.map((link) => (
               <Link
@@ -29,14 +33,14 @@ const Navbar = () => {
           <Image
             src="/menu.svg"
             alt="menu"
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             className="inline-block cursor-pointer lg:hidden"
             onClick={() => setOpen(!open)}
           ></Image>
         </div>
 
-        <div hidden={!open}>
+        {open && (
           <ul className="shadow-lg bg-gray-200 flexEnd flex-col px-2">
             {NAV_LINKS.map((link) => (
               <Link
@@ -48,7 +52,7 @@ const Navbar = () => {
               </Link>
             ))}
           </ul>
-        </div>
+        )}
       </nav>
     </>
   );
