@@ -7,24 +7,21 @@ const Services = () => {
         <div className="flexCenter flex-col md:flex-row gap-5">
           <img src="/wedding.jpeg" alt="wedding" width={512}></img>
           <p className="text-center p-5 md:regular-24 ">
-            Make your special day unforgettable with a stunning lion dance
-            performance that wows your guests!
+            Make your special day unforgettable!
           </p>
         </div>
         <h2 className="regular-32">Special Celebrations</h2>
         <div className="flexCenter flex-col md:flex-row gap-5">
           <img src="/celebrations.jpg" alt="special" width={512}></img>
           <p className="text-center p-5 md:regular-24">
-            Add excitement to your party with vibrant lion dance shows that get
-            everyone dancing and cheering!
+            Add excitement to your party!
           </p>
         </div>
         <h2 className="regular-32">Corporate Events</h2>
         <div className="flexCenter flex-col md:flex-row gap-5">
           <img src="/corporate.jpeg" alt="corporate events" width={512}></img>
           <p className="text-center p-5 md:regular-24">
-            Impress clients and boost morale with a lively lion dance at your
-            next corporate gathering!
+            Impress clients and boost morale!
           </p>
         </div>
       </div>
