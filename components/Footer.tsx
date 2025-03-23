@@ -6,10 +6,10 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="flexCenter mb-12">
-        <div className="max-container padding-container flex w-full  flex-col gap-5">
+      <footer className="flexCenter mb-8">
+        <div className="max-container padding-container flex w-full  flex-col gap-8">
           <hr className=" shadow " />
-          <div className="flex items-center flex-row  z-30 gap-5 ">
+          <div className="flex items-center flex-row  z-10 gap-5 ">
             <div className="flex flex-grow">
               <Link href="/">
                 <div className="flexCenter gap-2">
@@ -41,8 +41,11 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="hidden lg:flex flex-row flexStart pl-2 ">
-            <ul className="h-full gap-10 flex flex-row ">
+          <div className="flex flexStart pl-2 ">
+            <ul
+              className="h-full gap-3
+             flex flex-col lg:flex-row "
+            >
               {NAV_LINKS.map((link) => (
                 <Link
                   href={link.href}

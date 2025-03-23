@@ -38,7 +38,7 @@ export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
 
       {/* menu */}
       <div
-        className={`fixed inset-y-0 left-0 top-16 mt-3 w-full bg-white shadow-md transform ${
+        className={`fixed inset-y-0 left-0 top-16 mt-3 w-full h-full bg-white shadow-md transform ${
           isOpen ? "opacity-100" : "opacity-0 hidden"
         } transition-opacity duration-290 ease-in-out`}
       >
