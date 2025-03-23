@@ -5,7 +5,7 @@ const Services = () => {
         <h1 className="bold-52">Our Services</h1>
         <div className="flex flex-col lg:flex-row">
           <div className="flexCenter flex-col gap-10 py-5 px-5">
-            <h2 className="regular-32">Weddings</h2>
+            <h2 className="text-center regular-32">Weddings</h2>
             <div className="flexCenter flex-col gap-5">
               <img
                 src="/wedding.jpeg"
@@ -18,7 +18,7 @@ const Services = () => {
             </div>
           </div>
           <div className="flexCenter flex-col gap-10 py-5 px-5">
-            <h2 className="regular-32">Special Celebrations</h2>
+            <h2 className="text-center regular-32">Special Celebrations</h2>
             <div className="flexCenter flex-col gap-5">
               <img
                 src="/celebrations.jpg"
@@ -31,7 +31,7 @@ const Services = () => {
             </div>
           </div>
           <div className="flexCenter flex-col gap-10 py-5 px-5">
-            <h2 className="regular-32">Corporate Events</h2>
+            <h2 className="text-center regular-32">Corporate Events</h2>
             <div className="flexCenter flex-col gap-5">
               <img
                 src="/corporate.jpeg"
