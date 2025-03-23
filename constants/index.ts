@@ -5,3 +5,8 @@ export const NAV_LINKS = [
     { href: '/', key: 'media', label: 'Media' },
     { href: '/', key: 'booking ', label: 'Booking ' },
   ];
+
+export const MEDIA_ICONS = [
+  { site: 'instagram', icon: './instagram.svg'},
+  { site: 'youtube', icon: './youtube.svg'}
+]

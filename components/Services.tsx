@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <section className="max-container padding-container">
+    <section className=" max-container padding-container mb-10">
       <div className="flexCenter flex-col gap-10 py-5 px-5">
         <h1 className="bold-52">Our Services</h1>
         <h2 className="regular-32">Weddings</h2>
