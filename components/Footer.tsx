@@ -6,7 +6,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="flexCenter mb-16">
+      <footer className="flexCenter mb-12">
         <div className="max-container padding-container flex w-full  flex-col gap-5">
           <hr className=" shadow " />
           <div className="flex items-center flex-row  z-30 gap-5 ">
@@ -29,12 +29,14 @@ const Footer = () => {
             <ul className="flex flex-row gap-2 flexCenter ">
               {MEDIA_ICONS.map((media) => (
                 <div>
-                  <Image
-                    src={media.icon}
-                    alt={media.site}
-                    width={28}
-                    height={28}
-                  ></Image>
+                  <Link href={media.link}>
+                    <Image
+                      src={media.icon}
+                      alt={media.name}
+                      width={28}
+                      height={28}
+                    ></Image>
+                  </Link>
                 </div>
               ))}
             </ul>

@@ -7,6 +7,6 @@ export const NAV_LINKS = [
   ];
 
 export const MEDIA_ICONS = [
-  { site: 'instagram', icon: './instagram.svg'},
-  { site: 'youtube', icon: './youtube.svg'}
+  { name: 'instagram', icon: './instagram.svg', link:'https://www.instagram.com/ymtliondance/'},
+  { name: 'youtube', icon: './youtube.svg', link: ''}
 ]
