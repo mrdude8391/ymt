@@ -1,6 +1,6 @@
 const Group = () => {
   return (
-    <section className=" max-container padding-container flex flex-col gap-10 py-5 pb-24 md:gap-16 lg:py-20">
+    <section className=" max-container padding-container flexCenter flex-col gap-10 py-5 pb-24 md:gap-16 lg:py-20">
       <img src="/group.jpg" alt="group photo"></img>
       <h2 className="lg:px-40 bold-32">YMT Toronto Lion Dance</h2>
       <div className="lg:px-40 regular-18">
