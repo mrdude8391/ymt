@@ -7,6 +7,15 @@ video {
   @apply rounded-lg;
 }
 
+body {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  background-color: black;
+}
+
 @layer utilities {
   .flexBetween {
     @apply flex items-center justify-between;

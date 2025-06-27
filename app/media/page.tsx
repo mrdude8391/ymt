@@ -4,7 +4,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="max-container padding-container flex flex-col gap-16 my-10">
-      <h1 className="bold-32">Media</h1>
+      <h1 className="bold-32 text-gold">Media</h1>
       <section className="mb-10">
         <ul className="flexCenter flex-col gap-20">
           {MEDIA_VIDEOS.map((video) => (

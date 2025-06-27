@@ -1,9 +1,9 @@
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
     { href: '/about', key: 'about_us', label: 'About Us' },
-    { href: '/', key: 'performaces', label: 'Performances' },
+    { href: '/performances', key: 'performaces', label: 'Performances' },
     { href: '/media', key: 'media', label: 'Media' },
-    { href: '/', key: 'booking ', label: 'Booking ' },
+    { href: '/booking', key: 'booking ', label: 'Booking ' },
   ];
 
 export const MEDIA_ICONS = [
@@ -17,3 +17,10 @@ export const MEDIA_VIDEOS = [
   { title: 'interview-3', src: './interview-3.mp4' ,type:'video/mp4'}
 
 ]
+
+export const EMAILJS = {
+  SERVICE_ID : 'service_s2c0cyt',
+  TEMPLATE_ID : 'template_gfjryop',
+  KEY : 'HDxvY4TBYegjHpi9s'
+}
+

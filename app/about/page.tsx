@@ -3,10 +3,12 @@ import React from "react";
 const about = () => {
   return (
     <div className="max-container padding-container flex flex-col gap-16 my-10">
-      <h1 className="bold-32">About YMT</h1>
+      <h1 className="bold-32 text-gold">About YMT</h1>
       <section>
         <div className="flex flex-col gap-5">
-          <h2 className="bold-20">YMT Lion Dance – Introduction & History</h2>
+          <h2 className="bold-20 text-gold">
+            YMT Lion Dance – Introduction & History
+          </h2>
           <p className="regular-18">
             YMT Lion Dance is dedicated to preserving the rich tradition of lion
             dance while embracing creativity and innovation. With a focus on
@@ -18,7 +20,7 @@ const about = () => {
 
       <section>
         <div className="flex flex-col gap-5">
-          <h2 className="bold-20">Our History</h2>
+          <h2 className="bold-20 text-gold">Our History</h2>
           <p className="regular-18">
             Founded in 2024, YMT Lion Dance is built on a strong foundation of
             over 25 years of combined experience in performance and competition.

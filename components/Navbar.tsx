@@ -12,12 +12,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky w-full top-0 left-0 z-30">
-        <div className="flexBetween relative max-container padding-container z-30 py-3 bg-white">
+      <nav className="sticky w-full top-0 left-0 z-30 bg-gray-10">
+        <div className="flexBetween relative max-container padding-container z-30 py-3 bg-gray-10">
           <Link href="/" onClick={closeMenu}>
             <div className="flexCenter gap-5">
               <Image src="/ymt-logo.png" alt="logo" width={54} height={54} />
-              <p className="regular-16 text-gray-50 flexCenter transition-all hover:font-bold">
+              <p className="regular-18 text-gray-50 flexCenter transition-all hover:font-bold">
                 YMT Lion Dance
               </p>
             </div>

@@ -38,8 +38,8 @@ export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
 
       {/* menu */}
       <div
-        className={`fixed bottom-0 left-0 top-16 mt-3 w-full h-full bg-white shadow-md transform ${
-          isOpen ? "opacity-100  translate-y-0" : "opacity-0 translate-y-full"
+        className={`fixed bottom-0 left-0 top-16 mt-3 w-full h-full bg-black shadow-md transform ${
+          isOpen ? "opacity-100  translate-y-0.5" : "opacity-0 translate-y-full"
         } transition-opacity duration-300 ease-in-out`}
       >
         {isOpen && (
@@ -49,7 +49,7 @@ export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
                 <Link
                   href={link.href}
                   key={link.key}
-                  className="regular-24 text-gray-50 hover:font-bold"
+                  className="regular-24 text-gray-10 hover:font-bold"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
