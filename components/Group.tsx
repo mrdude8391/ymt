@@ -5,11 +5,11 @@ const Group = () => {
     <section className=" max-container padding-container flexCenter flex-col gap-10 py-5 pb-24 md:gap-16 lg:py-20">
       <img src="/group.jpg" alt="group photo"></img>
       <div className="flexCenter py-5">
-        <button className="px-16 py-2 regular-32 shadow-md bg-gold text-white rounded-lg">
+        <button className="px-16 py-2 regular-32 shadow-md bg-gold-100 text-white rounded-lg hover:bg-gold-120">
           <Link href="/booking">Book Now</Link>
         </button>
       </div>
-      <h2 className="lg:px-40 bold-32 text-gold">YMT Toronto Lion Dance</h2>
+      <h2 className="lg:px-40 bold-32 text-gold-100">YMT Toronto Lion Dance</h2>
       <div className="lg:px-40 regular-18">
         YMT Toronto Lion Dance – Yi Mo Tong is a team with a rich legacy in the
         art of lion dance, building on over 25 years of experience. For the past

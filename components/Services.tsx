@@ -2,10 +2,10 @@ const Services = () => {
   return (
     <section className=" max-container padding-container mb-10">
       <div className="flexCenter flex-col gap-10 py-5 px-5">
-        <h1 className="bold-52 text-gold">Our Services</h1>
+        <h1 className="bold-52 text-gold-100">Our Services</h1>
         <div className="flex flex-col lg:flex-row">
           <div className="flexCenter flex-col gap-10 py-5 px-5">
-            <h2 className="text-center regular-32 text-gold ">Weddings</h2>
+            <h2 className="text-center regular-32 text-gold-100 ">Weddings</h2>
             <div className="flexCenter flex-col gap-5">
               <img
                 src="/wedding.jpeg"
@@ -18,7 +18,7 @@ const Services = () => {
             </div>
           </div>
           <div className="flexCenter flex-col gap-10 py-5 px-5">
-            <h2 className="text-center regular-32 text-gold">
+            <h2 className="text-center regular-32 text-gold-100">
               Special Celebrations
             </h2>
             <div className="flexCenter flex-col gap-5">
@@ -33,7 +33,7 @@ const Services = () => {
             </div>
           </div>
           <div className="flexCenter flex-col gap-10 py-5 px-5">
-            <h2 className="text-center regular-32 text-gold">
+            <h2 className="text-center regular-32 text-gold-100">
               Corporate Events
             </h2>
             <div className="flexCenter flex-col gap-5">
