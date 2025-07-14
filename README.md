@@ -10,10 +10,24 @@ A React NextJS website to allow clients to book the YMT Lion Dance team for even
 
 [Bryan Hu](https://www.linkedin.com/in/hu-bryan)
 
-## Dependencies
+## Getting Started
+
+### Dependencies
 * Tailwind
 * NextJS
 * EmailJS
+
+### Installing
+
+* Clone repo
+
+### Executing program
+
+```
+npm run dev
+```
+
+
 
 ## Acknowledgments
 
