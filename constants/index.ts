@@ -1,9 +1,9 @@
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
+    { href: '/booking', key: 'booking ', label: 'Booking ' },
     { href: '/about', key: 'about_us', label: 'About Us' },
     { href: '/performances', key: 'performaces', label: 'Performances' },
     { href: '/media', key: 'media', label: 'Media' },
-    { href: '/booking', key: 'booking ', label: 'Booking ' },
   ];
 
 export const MEDIA_ICONS = [
