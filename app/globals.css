@@ -33,7 +33,7 @@ nav {
   }
 
   .padding-container {
-    @apply px-6 lg:px-20 3xl:px-0;
+    @apply px-10 lg:px-20 3xl:px-0;
   }
 
   /* FONTS */
@@ -91,6 +91,10 @@ nav {
 
   .bold-32 {
     @apply text-[32px] font-[700] leading-[120%];
+  }
+
+  .bold-28 {
+    @apply text-[28px] font-[700];
   }
 
   .bold-20 {
