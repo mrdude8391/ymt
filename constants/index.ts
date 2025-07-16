@@ -47,6 +47,6 @@ export const LIONS = [
 export const LEDLIONS = [
   { name: 'L1', colors: 'White/Blue', image: '/YMT Lions/LionProfiles/LED_white_blue.png'},
   
-  { name: 'L1', colors: 'White/Green', image: '/YMT Lions/LionProfiles/LED_white_green.jpg'}
+  { name: 'L2', colors: 'White/Green', image: '/YMT Lions/LionProfiles/LED_white_green.jpg'}
 ]
 
