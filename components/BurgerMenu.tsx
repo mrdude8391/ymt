@@ -40,7 +40,7 @@ export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
       <div
         className={`fixed bottom-0 left-0 top-16 mt-3 w-full h-full bg-black shadow-md transform ${
           isOpen ? "opacity-100  translate-y-0.5" : "opacity-0 translate-y-full"
-        } transition-opacity duration-300 ease-in-out`}
+        } transition-opacity duration-300`}
       >
         {isOpen && (
           <nav className="py-4 ">
