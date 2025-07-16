@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="max-container padding-container flex flex-col gap-16 my-10">
+    <div className="max-container padding-container flex flex-col gap-6 my-10">
       <h1 className="bold-32 text-gold-100">Booking</h1>
       <section>
         <div className="max-container padding-container flexCenter  flex-col gap-16 my-10">
