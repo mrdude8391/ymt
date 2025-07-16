@@ -10,7 +10,7 @@ const Group = () => {
         </button>
       </div>
       <h2 className="lg:px-40 bold-32 text-gold-100">YMT Toronto Lion Dance</h2>
-      <div className="lg:px-40 regular-18">
+      <div className="text-justify lg:px-40 regular-18">
         YMT Toronto Lion Dance – Yi Mo Tong is a team with a rich legacy in the
         art of lion dance, building on over 25 years of experience. For the past
         decade, we established a blend of athleticism and artistry, aimed at

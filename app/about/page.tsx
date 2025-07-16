@@ -9,7 +9,7 @@ const about = () => {
           <h2 className="bold-20 text-gold-100">
             YMT Lion Dance – Introduction & History
           </h2>
-          <p className="regular-18">
+          <p className="text-justify regular-18">
             YMT Lion Dance is dedicated to preserving the rich tradition of lion
             dance while embracing creativity and innovation. With a focus on
             precision, athleticism, and storytelling, YMT delivers captivating
@@ -21,7 +21,7 @@ const about = () => {
       <section>
         <div className="flex flex-col gap-5">
           <h2 className="bold-20 text-gold-100">Our History</h2>
-          <p className="regular-18">
+          <p className="text-justify regular-18">
             Founded in 2024, YMT Lion Dance is built on a strong foundation of
             over 25 years of combined experience in performance and competition.
             The team was formed with a vision to promote lion dance through
@@ -36,7 +36,7 @@ const about = () => {
 
       <section>
         <div className="flex flex-col gap-5">
-          <p className="regular-18">
+          <p className="text-justify regular-18">
             YMT operates with a well-organized approach, ensuring long-term
             growth and development. The team values teamwork, inclusivity,
             innovation, and discipline, creating an environment where members
@@ -44,7 +44,7 @@ const about = () => {
             dedication, YMT aims to further the recognition of lion dance in
             North America while staying true to its cultural roots.
           </p>
-          <p className="regular-18">
+          <p className="text-justify regular-18">
             Looking ahead, YMT remains committed to honouring tradition,
             evolving its craft, and inspiring future generations to carry the
             art of lion dance forward.
