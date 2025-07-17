@@ -9,7 +9,7 @@ const Group = () => {
       <div className=" max-container padding-container flexCenter flex-col gap-10 py-5 pb-24 md:gap-10 lg:py-10">
         <AnimatePresence>
           <motion.div
-            whileInView={{
+            animate={{
               y: 0,
               opacity: 1,
               transition: { delay: 0.5 },
@@ -27,7 +27,7 @@ const Group = () => {
           </motion.div>
           {/* Intro Message */}
           <motion.div
-            whileInView={{ y: 0, opacity: 1 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.75 }}
             initial={{ y: 20, opacity: 0 }}
             className="max-w-3xl"
@@ -50,7 +50,7 @@ const Group = () => {
 
           {/* Book Button */}
           <motion.div
-            whileInView={{ y: 0, opacity: 1 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
             initial={{ y: 20, opacity: 0 }}
             className="flexCenter mb-20 py-5"
@@ -63,7 +63,7 @@ const Group = () => {
           </motion.div>
           {/* Group Photo */}
           <motion.div
-            whileInView={{ y: 0, opacity: 1 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1.25 }}
             initial={{ y: 20, opacity: 0 }}
           >
