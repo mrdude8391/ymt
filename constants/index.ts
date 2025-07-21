@@ -48,7 +48,7 @@ export const LOGOS = [
   { name: 'cbc', image: '/logos/cbc.webp'},
  // { name: 'lcbo', image: '/logos/lcbo.svg'},
   //{ name: 'nofrills', image: '/logos/nofrills.png'},
-  { name: 'oxford', image: '/logos/oxford.jfif'},
+  { name: 'oxford', image: '/logos/oxford.png'},
   //{ name: 'pc', image: '/logos/pc.png'},
   { name: 'rogers', image: '/logos/rogers.png'},
   { name: 'salesforce', image: '/logos/salesforce.png'},
