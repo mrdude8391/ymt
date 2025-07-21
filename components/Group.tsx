@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence, delay } from "framer-motion";
+import { LOGOS } from "@/constants";
 
 const Group = () => {
   return (
@@ -53,7 +54,7 @@ const Group = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
             initial={{ y: 20, opacity: 0 }}
-            className="flexCenter mb-20 py-5"
+            className="flexCenter mb-10 py-5"
           >
             <Link href="/booking">
               <button className="px-16 py-2 regular-32 shadow-md bg-gold-100 text-white rounded-lg hover:bg-gold-120">
@@ -61,11 +62,38 @@ const Group = () => {
               </button>
             </Link>
           </motion.div>
-          {/* Group Photo */}
+
+          {/* Previous Clients */}
           <motion.div
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1.25 }}
             initial={{ y: 20, opacity: 0 }}
+            className="flex flex-col gap-10 mb-10"
+          >
+            <p className="mb-5 regular-18 text-center text-gold-100">
+              Join our satisfied clients
+            </p>
+            <div className="grid grid-cols-3 lg:grid-cols-6 gap-12">
+              {LOGOS.map((link, idx) => (
+                <div
+                  key={idx}
+                  className="relative h-12 w-auto flex items-center "
+                >
+                  <Image
+                    width={100}
+                    height={100}
+                    src={link.image}
+                    alt={link.name}
+                  ></Image>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+          {/* Group Photo */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
+            viewport={{ once: true, margin: "-100px" }}
           >
             <img src="/group.jpg" alt="group photo"></img>
           </motion.div>
