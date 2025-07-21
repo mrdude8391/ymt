@@ -27,26 +27,31 @@ export const EMAILJS = {
 export const LIONS = [
   
   { name: 'A' , colors: "Red/Silver", image: '/YMT Lions/LionProfiles/red_silver.jpg'},
-  
-  { name: 'B' , colors: "Red/Gold", image: '/YMT Lions/LionProfiles/red_gold.jpeg'},
-  
+  { name: 'B' , colors: "Red/Gold", image: '/YMT Lions/LionProfiles/red_gold.jpeg'}, 
   { name: 'C' , colors: "Red/Gold + Black", image: '/YMT Lions/LionProfiles/red_gold_black.png'},
-  
   { name: 'D' , colors: "Yellow/Gold", image: '/YMT Lions/LionProfiles/yellow_gold.jpeg'},
-  
   { name: 'E' , colors: "Yellow/Gold + Black", image: '/YMT Lions/LionProfiles/yellow_gold_black.png'},
-  
   { name: 'F' , colors: "White/Gold", image: '/YMT Lions/LionProfiles/white_gold.jpeg'},
-  
   { name: 'G' , colors: "White/Purple", image: '/YMT Lions/LionProfiles/white_purple.jpeg'},
-  
   { name: 'H' , colors: "Black/Red", image: '/YMT Lions/LionProfiles/white_purple.jpeg'},
 
 ]
 
 export const LEDLIONS = [
   { name: 'L1', colors: 'White/Blue', image: '/YMT Lions/LionProfiles/LED_white_blue.png'},
-  
   { name: 'L2', colors: 'White/Green', image: '/YMT Lions/LionProfiles/LED_white_green.jpg'}
 ]
 
+export const LOGOS = [
+ // { name: 'aritizia', image: '/logos/arizia.png'},
+  { name: 'bay', image: '/logos/bay.jpg'},
+  { name: 'cbc', image: '/logos/cbc.webp'},
+ // { name: 'lcbo', image: '/logos/lcbo.svg'},
+  //{ name: 'nofrills', image: '/logos/nofrills.png'},
+  { name: 'oxford', image: '/logos/oxford.jfif'},
+  //{ name: 'pc', image: '/logos/pc.png'},
+  { name: 'rogers', image: '/logos/rogers.png'},
+  { name: 'salesforce', image: '/logos/salesforce.png'},
+  { name: 'snapchat', image: '/logos/snapchat.png'}
+
+]
