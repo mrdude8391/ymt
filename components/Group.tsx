@@ -73,11 +73,11 @@ const Group = () => {
             <p className="mb-5 regular-18 text-center text-gold-100">
               Join our satisfied clients
             </p>
-            <div className="grid grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className="grid grid-cols-3 lg:grid-cols-6 gap-3 ">
               {LOGOS.map((link, idx) => (
                 <div
                   key={idx}
-                  className="relative h-12 w- flex items-center justify-center"
+                  className="relative h-12 w-auto my-5 flex items-center justify-center"
                 >
                   <Image
                     width={100}
