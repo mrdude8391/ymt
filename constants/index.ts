@@ -19,9 +19,13 @@ export const MEDIA_VIDEOS = [
 ]
 
 export const EMAILJS = {
-  SERVICE_ID : 'service_s2c0cyt',
-  TEMPLATE_ID : 'template_gfjryop',
-  KEY : 'HDxvY4TBYegjHpi9s'
+
+
+  // SERVICE_ID : 'service_rpzbq5e', 
+  
+  SERVICE_ID : 'service_4x72rdl', // ymtliondance@outlook.com
+  TEMPLATE_ID : 'template_e9gcvwi',
+  KEY : 'mQ84wq0fv0Siq6Bq7'
 }
 
 export const LIONS = [
@@ -33,7 +37,7 @@ export const LIONS = [
   { name: 'E' , colors: "Yellow/Gold + Black", image: '/YMT Lions/LionProfiles/yellow_gold_black.png'},
   { name: 'F' , colors: "White/Gold", image: '/YMT Lions/LionProfiles/white_gold.jpeg'},
   { name: 'G' , colors: "White/Purple", image: '/YMT Lions/LionProfiles/white_purple.jpeg'},
-  { name: 'H' , colors: "Black/Red", image: '/YMT Lions/LionProfiles/white_purple.jpeg'},
+  { name: 'H' , colors: "Black/Gold", image: '/YMT Lions/LionProfiles/black_yellow.jpeg'},
 
 ]
 
