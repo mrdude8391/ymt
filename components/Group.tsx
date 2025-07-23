@@ -73,17 +73,21 @@ const Group = () => {
             <p className="mb-5 regular-18 text-center text-gold-100">
               Join our satisfied clients
             </p>
-            <div className="grid grid-cols-3 lg:grid-cols-6 gap-12">
+            <div className="grid grid-cols-3 lg:grid-cols-6 gap-3">
               {LOGOS.map((link, idx) => (
                 <div
                   key={idx}
-                  className="relative h-12 w-auto flex items-center "
+                  className="relative h-12 w- flex items-center justify-center"
                 >
                   <Image
                     width={100}
                     height={100}
                     src={link.image}
                     alt={link.name}
+                    onLoadingComplete={(img) => {
+                      const imageRatio = img.naturalWidth / img.naturalHeight;
+                      img.style.width = `${Math.pow(imageRatio, 0.525) * 60}px`;
+                    }}
                   ></Image>
                 </div>
               ))}
