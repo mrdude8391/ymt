@@ -21,7 +21,7 @@ export const MEDIA_VIDEOS = [
 export const EMAILJS = {
 
 
-  // SERVICE_ID : 'service_rpzbq5e', 
+  // SERVICE_ID : 'service_rpzbq5e', test
   
   SERVICE_ID : 'service_4x72rdl', // ymtliondance@outlook.com
   TEMPLATE_ID : 'template_e9gcvwi',
