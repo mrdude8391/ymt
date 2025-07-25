@@ -1,25 +1,105 @@
+"use client";
+import Image from "next/image";
 import Link from "next/link";
+import { motion, AnimatePresence, delay } from "framer-motion";
+import { LOGOS } from "@/constants";
+import { useFadeInUpDelay } from "@/constants/motionVariants";
 
 const Group = () => {
   return (
-    <section className=" max-container padding-container flexCenter flex-col gap-10 py-5 pb-24 md:gap-16 lg:py-20">
-      <img src="/group.jpg" alt="group photo"></img>
-      <div className="flexCenter py-5">
-        <button className="px-16 py-2 regular-32 shadow-md bg-gold-100 text-white rounded-lg hover:bg-gold-120">
-          <Link href="/booking">Book Now</Link>
-        </button>
-      </div>
-      <h2 className="lg:px-40 bold-32 text-gold-100">YMT Toronto Lion Dance</h2>
-      <div className="text-justify lg:px-40 regular-18">
-        YMT Toronto Lion Dance – Yi Mo Tong is a team with a rich legacy in the
-        art of lion dance, building on over 25 years of experience. For the past
-        decade, we established a blend of athleticism and artistry, aimed at
-        spreading cultural awareness and inspiring new generations to embrace
-        this ancient tradition. We celebrated a major milestone by securing 3rd
-        place at the prestigious 2024 Canada National Competition. As we look to
-        the future, our sights are set on competing internationally and to
-        elevate both the sport and the cultural significant of Lion Dance in
-        Canada.
+    <section>
+      <div className=" max-container padding-container flexCenter flex-col gap-10 py-5 pb-24 md:gap-10 lg:py-10">
+        <AnimatePresence>
+          <motion.div
+            variants={useFadeInUpDelay(0.5)}
+            initial="hidden"
+            animate="show"
+          >
+            {/* Logo */}
+            <Image
+              width={200}
+              height={200}
+              src="/ymt-logo.png"
+              alt="YMT Logo"
+            ></Image>
+          </motion.div>
+          {/* Intro Message */}
+          <motion.div
+            variants={useFadeInUpDelay(0.75)}
+            initial="hidden"
+            animate="show"
+            className="max-w-3xl"
+          >
+            <h2 className="pb-10 bold-32 text-center text-gold-100">
+              YMT Toronto Lion Dance
+            </h2>
+            <p className="text-justify regular-18">
+              YMT Toronto Lion Dance – Yi Mo Tong is a team with a rich legacy
+              in the art of lion dance, building on over 25 years of experience.
+              For the past decade, we established a blend of athleticism and
+              artistry, aimed at spreading cultural awareness and inspiring new
+              generations to embrace this ancient tradition. We celebrated a
+              major milestone by securing 3rd place at the prestigious 2024
+              Canada National Competition. As we look to the future, our sights
+              are set on competing internationally and to elevate both the sport
+              and the cultural significant of Lion Dance in Canada.
+            </p>
+          </motion.div>
+
+          {/* Book Button */}
+          <motion.div
+            variants={useFadeInUpDelay(1)}
+            initial="hidden"
+            animate="show"
+            className="flexCenter mb-10 py-5"
+          >
+            <Link href="/booking">
+              <button className="px-16 py-2 regular-32 shadow-md bg-gold-100 text-white rounded-lg hover:bg-gold-120">
+                Book Now ↗
+              </button>
+            </Link>
+          </motion.div>
+
+          {/* Previous Clients */}
+          <motion.div
+            variants={useFadeInUpDelay(1.25)}
+            initial="hidden"
+            animate="show"
+            className="flex flex-col gap-10 mb-10"
+          >
+            <p className="mb-5 regular-18 text-center text-gold-100">
+              Join our satisfied clients
+            </p>
+            <div className="grid grid-cols-3 lg:grid-cols-6 gap-3 ">
+              {LOGOS.map((link, idx) => (
+                <div
+                  key={idx}
+                  className="relative h-12 w-auto my-5 flex items-center justify-center"
+                >
+                  <Image
+                    width={100}
+                    height={100}
+                    src={link.image}
+                    alt={link.name}
+                    onLoadingComplete={(img) => {
+                      const imageRatio = img.naturalWidth / img.naturalHeight;
+                      img.style.width = `${Math.pow(imageRatio, 0.525) * 60}px`;
+                    }}
+                  ></Image>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+          {/* Group Photo */}
+          <motion.div
+            variants={useFadeInUpDelay(0.25)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <img src="/group.jpg" alt="group photo"></img>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );

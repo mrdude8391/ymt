@@ -19,34 +19,43 @@ export const MEDIA_VIDEOS = [
 ]
 
 export const EMAILJS = {
-  SERVICE_ID : 'service_s2c0cyt',
-  TEMPLATE_ID : 'template_gfjryop',
-  KEY : 'HDxvY4TBYegjHpi9s'
+
+
+  // SERVICE_ID : 'service_rpzbq5e', test
+  
+  SERVICE_ID : 'service_4x72rdl', // ymtliondance@outlook.com
+  TEMPLATE_ID : 'template_e9gcvwi',
+  KEY : 'mQ84wq0fv0Siq6Bq7'
 }
 
 export const LIONS = [
   
   { name: 'A' , colors: "Red/Silver", image: '/YMT Lions/LionProfiles/red_silver.jpg'},
-  
-  { name: 'B' , colors: "Red/Gold", image: '/YMT Lions/LionProfiles/red_gold.jpeg'},
-  
+  { name: 'B' , colors: "Red/Gold", image: '/YMT Lions/LionProfiles/red_gold.jpeg'}, 
   { name: 'C' , colors: "Red/Gold + Black", image: '/YMT Lions/LionProfiles/red_gold_black.png'},
-  
   { name: 'D' , colors: "Yellow/Gold", image: '/YMT Lions/LionProfiles/yellow_gold.jpeg'},
-  
   { name: 'E' , colors: "Yellow/Gold + Black", image: '/YMT Lions/LionProfiles/yellow_gold_black.png'},
-  
   { name: 'F' , colors: "White/Gold", image: '/YMT Lions/LionProfiles/white_gold.jpeg'},
-  
   { name: 'G' , colors: "White/Purple", image: '/YMT Lions/LionProfiles/white_purple.jpeg'},
-  
-  { name: 'H' , colors: "Black/Red", image: '/YMT Lions/LionProfiles/white_purple.jpeg'},
+  { name: 'H' , colors: "Black/Gold", image: '/YMT Lions/LionProfiles/black_yellow.jpeg'},
 
 ]
 
 export const LEDLIONS = [
   { name: 'L1', colors: 'White/Blue', image: '/YMT Lions/LionProfiles/LED_white_blue.png'},
-  
   { name: 'L2', colors: 'White/Green', image: '/YMT Lions/LionProfiles/LED_white_green.jpg'}
 ]
 
+export const LOGOS = [
+ // { name: 'aritizia', image: '/logos/arizia.png'},
+  { name: 'bay', image: '/logos/bay.jpg'},
+  { name: 'cbc', image: '/logos/cbc.webp'},
+ // { name: 'lcbo', image: '/logos/lcbo.svg'},
+  //{ name: 'nofrills', image: '/logos/nofrills.png'},
+  { name: 'oxford', image: '/logos/oxford.png'},
+  //{ name: 'pc', image: '/logos/pc.png'},
+  { name: 'rogers', image: '/logos/rogers.png'},
+  { name: 'salesforce', image: '/logos/salesforce.png'},
+  { name: 'snapchat', image: '/logos/snapchat.png'}
+
+]
