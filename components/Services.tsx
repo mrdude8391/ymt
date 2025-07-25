@@ -22,7 +22,7 @@ const Services = () => {
               variants={useFadeInUpDelay(0.25)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-75px" }}
               className="flexCenter flex-col gap-10 py-5 px-5"
             >
               <h2 className="text-center regular-32 text-gold-100 ">
@@ -43,7 +43,7 @@ const Services = () => {
               variants={useFadeInUpDelay(0.25)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-75px" }}
               className="flexCenter flex-col gap-10 py-5 px-5"
             >
               <h2 className="text-center regular-32 text-gold-100">
@@ -64,7 +64,7 @@ const Services = () => {
               variants={useFadeInUpDelay(0.25)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-75px" }}
               className="flexCenter flex-col gap-10 py-5 px-5"
             >
               <h2 className="text-center regular-32 text-gold-100">

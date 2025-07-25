@@ -95,7 +95,7 @@ const Group = () => {
             variants={useFadeInUpDelay(0.25)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-75px" }}
           >
             <img src="/group.jpg" alt="group photo"></img>
           </motion.div>
