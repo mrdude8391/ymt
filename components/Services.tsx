@@ -1,5 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
+import { useFadeInUpDelay } from "@/constants/motionVariants";
 
 const Services = () => {
   return (
@@ -7,8 +8,9 @@ const Services = () => {
       <AnimatePresence>
         <motion.div className="flexCenter flex-col gap-10 py-5 px-5">
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
+            variants={useFadeInUpDelay(0.25)}
+            initial="hidden"
+            whileInView="show"
             viewport={{ once: true, margin: "-100px" }}
             className="bold-52 text-gold-100"
           >
@@ -17,8 +19,9 @@ const Services = () => {
           {/* Title - Image Card - Caption */}
           <div className="flex flex-col lg:flex-row">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
+              variants={useFadeInUpDelay(0.25)}
+              initial="hidden"
+              whileInView="show"
               viewport={{ once: true, margin: "-100px" }}
               className="flexCenter flex-col gap-10 py-5 px-5"
             >
@@ -37,8 +40,9 @@ const Services = () => {
               </div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
+              variants={useFadeInUpDelay(0.25)}
+              initial="hidden"
+              whileInView="show"
               viewport={{ once: true, margin: "-100px" }}
               className="flexCenter flex-col gap-10 py-5 px-5"
             >
@@ -57,8 +61,9 @@ const Services = () => {
               </div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
+              variants={useFadeInUpDelay(0.25)}
+              initial="hidden"
+              whileInView="show"
               viewport={{ once: true, margin: "-100px" }}
               className="flexCenter flex-col gap-10 py-5 px-5"
             >

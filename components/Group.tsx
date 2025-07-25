@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence, delay } from "framer-motion";
 import { LOGOS } from "@/constants";
+import { useFadeInUpDelay } from "@/constants/motionVariants";
 
 const Group = () => {
   return (
@@ -10,13 +11,9 @@ const Group = () => {
       <div className=" max-container padding-container flexCenter flex-col gap-10 py-5 pb-24 md:gap-10 lg:py-10">
         <AnimatePresence>
           <motion.div
-            animate={{
-              y: 0,
-              opacity: 1,
-              transition: { delay: 0.5 },
-            }}
-            transition={{ duration: 1 }}
-            initial={{ y: 20, opacity: 0 }}
+            variants={useFadeInUpDelay(0.5)}
+            initial="hidden"
+            animate="show"
           >
             {/* Logo */}
             <Image
@@ -28,9 +25,9 @@ const Group = () => {
           </motion.div>
           {/* Intro Message */}
           <motion.div
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.75 }}
-            initial={{ y: 20, opacity: 0 }}
+            variants={useFadeInUpDelay(0.75)}
+            initial="hidden"
+            animate="show"
             className="max-w-3xl"
           >
             <h2 className="pb-10 bold-32 text-center text-gold-100">
@@ -51,9 +48,9 @@ const Group = () => {
 
           {/* Book Button */}
           <motion.div
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-            initial={{ y: 20, opacity: 0 }}
+            variants={useFadeInUpDelay(1)}
+            initial="hidden"
+            animate="show"
             className="flexCenter mb-10 py-5"
           >
             <Link href="/booking">
@@ -65,9 +62,9 @@ const Group = () => {
 
           {/* Previous Clients */}
           <motion.div
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1.25 }}
-            initial={{ y: 20, opacity: 0 }}
+            variants={useFadeInUpDelay(1.25)}
+            initial="hidden"
+            animate="show"
             className="flex flex-col gap-10 mb-10"
           >
             <p className="mb-5 regular-18 text-center text-gold-100">
@@ -95,8 +92,9 @@ const Group = () => {
           </motion.div>
           {/* Group Photo */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
+            variants={useFadeInUpDelay(0.25)}
+            initial="hidden"
+            whileInView="show"
             viewport={{ once: true, margin: "-100px" }}
           >
             <img src="/group.jpg" alt="group photo"></img>
