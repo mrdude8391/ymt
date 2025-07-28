@@ -5,8 +5,7 @@ Simple overview of use/purpose.
 ## Description
 
 A React NextJS website to allow clients to book the YMT Lion Dance team for events. The site also contains information about the Lion dance culture and history, and information about the team. 
-Hosted on Vercel for testing
-https://vercel.com/bryans-projects-77f51d25/ymt
+Hosted on Vercel for testing https://ymt-chi.vercel.app/
 
 ## Authors
 
