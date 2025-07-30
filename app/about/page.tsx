@@ -34,7 +34,7 @@ const about = () => {
           </motion.div>
         </section>
 
-        <section>
+        <section className="flex flex-col gap-5">
           <motion.div
             variants={useFadeInRightDelay(0.5)}
             initial="hidden"
@@ -54,9 +54,7 @@ const about = () => {
               both performance and competition.
             </p>
           </motion.div>
-        </section>
 
-        <section>
           <motion.div
             variants={useFadeInRightDelay(0.75)}
             initial="hidden"
