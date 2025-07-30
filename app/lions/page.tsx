@@ -11,13 +11,13 @@ const page = () => {
           <div className="flexCenter flex-col">
             <h2 className="bold-32">Main Lions</h2>
             <div className="flex flex-col flex-initial justify-center">
-              <ul className="flex justify-evenly flex-col flex-wrap lg:flex-row gap-16 my-10">
+              <ul className="flex justify-evenly flex-col flex-wrap lg:grid-cols-1 gap-16 my-10">
                 {LIONS.map((lion) => (
                   <div>
                     <Image
                       src={lion.image}
                       alt="lion picture"
-                      width={700}
+                      width={400}
                       height={400}
                     />
                     <span>{lion.name}. </span>
@@ -31,13 +31,13 @@ const page = () => {
           <div className="flexCenter flex-col">
             <h2 className="bold-32">LED Lions</h2>
             <div className="flex flex-col flex-initial justify-center">
-              <ul className="flex justify-evenly flex-col flex-wrap lg:flex-row gap-16 my-10">
+              <ul className="flex justify-evenly flex-col flex-wrap lg:grid-cols-1 gap-16 my-10">
                 {LEDLIONS.map((lion) => (
                   <div>
                     <Image
                       src={lion.image}
                       alt="lion picture"
-                      width={700}
+                      width={400}
                       height={400}
                     />
                     <span>{lion.name}. </span>

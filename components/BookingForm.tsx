@@ -2,10 +2,23 @@
 
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { EMAILJS } from "@/constants";
 
 const BookingForm = () => {
   const form = useRef<HTMLFormElement>(null);
+
+  const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const publicKey = process.env.NEXT_PUBLIC_KEY;
+
+  if (!serviceId) {
+    throw new Error("Missing EmailJS Service ID environment variables.");
+  }
+  if (!templateId) {
+    throw new Error("Missing EmailJS template ID environment variables.");
+  }
+  if (!publicKey) {
+    throw new Error("Missing EmailJS key environment variables.");
+  }
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -13,8 +26,8 @@ const BookingForm = () => {
     if (!form.current) return;
 
     emailjs
-      .sendForm(EMAILJS.SERVICE_ID, EMAILJS.TEMPLATE_ID, form.current, {
-        publicKey: EMAILJS.KEY,
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
       })
       .then(
         () => {

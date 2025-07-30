@@ -18,16 +18,6 @@ export const MEDIA_VIDEOS = [
 
 ]
 
-export const EMAILJS = {
-
-
-  // SERVICE_ID : 'service_rpzbq5e', test
-  
-  SERVICE_ID : 'service_4x72rdl', // ymtliondance@outlook.com
-  TEMPLATE_ID : 'template_e9gcvwi',
-  KEY : 'mQ84wq0fv0Siq6Bq7'
-}
-
 export const LIONS = [
   
   { name: 'A' , colors: "Red/Silver", image: '/YMT Lions/LionProfiles/red_silver.jpg'},
