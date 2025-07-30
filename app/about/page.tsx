@@ -42,6 +42,7 @@ const about = () => {
             className="flex flex-col gap-5"
           >
             <h2 className="bold-20 text-gold-100">Our History</h2>
+
             <p className="text-justify regular-18">
               Founded in 2024, YMT Lion Dance is built on a strong foundation of
               over 25 years of combined experience in performance and
