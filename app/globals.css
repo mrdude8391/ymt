@@ -16,6 +16,22 @@ nav {
   background-color: black;
 }
 
+@font-face {
+  font-family: "Spartan";
+  src: url("/fonts/league-spartan-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-spartan: "Spartan", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Spartan";
+}
+
 @layer utilities {
   .flexBetween {
     @apply flex items-center justify-between;
