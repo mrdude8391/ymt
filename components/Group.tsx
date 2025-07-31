@@ -49,7 +49,7 @@ const Group = () => {
           {/* Book Button */}
           <motion.div variants={fadeInUp} className="flexCenter mb-10 py-5">
             <Link href="/booking">
-              <button className="px-16 py-2 regular-32 shadow-md bg-gold-100 text-white rounded-lg hover:bg-gold-120">
+              <button className="px-16 pt-4 py-2 regular-32 shadow-md bg-gold-100 text-white rounded-lg hover:bg-gold-120 font-[spartan]">
                 Book Now ↗
               </button>
             </Link>
