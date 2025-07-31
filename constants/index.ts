@@ -7,8 +7,10 @@ export const NAV_LINKS = [
   ];
 
 export const MEDIA_ICONS = [
-  { name: 'instagram', icon: './instagram.svg', link:'https://www.instagram.com/ymtliondance/'},
-  { name: 'youtube', icon: './youtube.svg', link: ''}
+  { name: 'instagram', icon: './socials/ig.svg', link:'https://www.instagram.com/ymtliondance/'},
+  { name: 'youtube', icon: './socials/youtube.svg', link: 'https://www.youtube.com/@ymtliondance'},
+  { name: 'tiktok', icon: './socials/tiktok.svg', link: 'https://www.tiktok.com/@ymtliondance'},
+  { name: 'linkedin', icon: './socials/linkedin.svg', link: 'https://www.linkedin.com/company/ymt-lion-dance'},
 ]
 
 export const MEDIA_VIDEOS = [

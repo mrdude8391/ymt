@@ -8,9 +8,11 @@ const Footer = () => {
     <>
       <footer className="flexCenter mb-8">
         <div className="max-container padding-container flex w-full  flex-col gap-8">
+          {/* Line break */}
           <hr className=" shadow " />
-          <div className="flex items-center flex-row  z-10 gap-5 ">
-            <div className="flex flex-grow">
+          <div className="flex justify-between items-center flex-row  z-10 gap-5 ">
+            {/* YMT logo link to home*/}
+            <div className="flex">
               <Link href="/">
                 <div className="flexCenter gap-2">
                   <Image
@@ -25,10 +27,10 @@ const Footer = () => {
                 </div>
               </Link>
             </div>
-
+            {/* Media Icons */}
             <ul className="flex flex-row gap-2 flexCenter ">
               {MEDIA_ICONS.map((media) => (
-                <div>
+                <div className="bg-gray-50 p-[0.8px] rounded-lg">
                   <Link href={media.link}>
                     <Image
                       src={media.icon}
@@ -41,7 +43,8 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="flex flexStart pl-2 ">
+          {/* Navigation Links */}
+          <div className="flex flexStart p ">
             <ul
               className="h-full gap-3
              flex flex-col lg:flex-row "
@@ -56,6 +59,15 @@ const Footer = () => {
                 </Link>
               ))}
             </ul>
+          </div>
+
+          <div className="flex flex-col gap-2 text-gray-50">
+            <p className="font-bold bold-18">Contact Us</p>
+            <div className="flex flex-col gap-2 lg:gap-5 lg:flex-row ">
+              <p>+1 (416) 230-3443</p>
+              <p className="hidden lg:inline">|</p>
+              <p>ymtliondance@outlook.com</p>
+            </div>
           </div>
         </div>
       </footer>
