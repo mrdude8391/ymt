@@ -23,7 +23,7 @@ const Services = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, margin: "-75px" }}
-              className="flexCenter flex-col gap-10 py-5 px-5"
+              className="flex flex-col justify-between gap-10 py-5 px-5"
             >
               <h2 className="text-center regular-32 text-gold-100 ">
                 Weddings
@@ -44,7 +44,7 @@ const Services = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, margin: "-75px" }}
-              className="flexCenter flex-col gap-10 py-5 px-5"
+              className="flex flex-col justify-between gap-10 py-5 px-5"
             >
               <h2 className="text-center regular-32 text-gold-100">
                 Special Celebrations
@@ -65,7 +65,7 @@ const Services = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, margin: "-75px" }}
-              className="flexCenter flex-col gap-10 py-5 px-5"
+              className="flex flex-col justify-between gap-10 py-5 px-5"
             >
               <h2 className="text-center regular-32 text-gold-100">
                 Corporate Events
