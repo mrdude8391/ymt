@@ -1,20 +1,25 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence, delay } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { LOGOS } from "@/constants";
-import { useFadeInUpDelay } from "@/constants/motionVariants";
+import {
+  staggerContainer,
+  fadeInUp,
+  useFadeInUpDelay,
+} from "@/constants/motionVariants";
 
 const Group = () => {
   return (
     <section>
-      <div className=" max-container padding-container flexCenter flex-col gap-10 py-5 pb-24 md:gap-10 lg:py-10">
-        <AnimatePresence>
-          <motion.div
-            variants={useFadeInUpDelay(0.5)}
-            initial="hidden"
-            animate="show"
-          >
+      <AnimatePresence>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          animate="show"
+          className=" max-container padding-container flexCenter flex-col gap-10 py-5 pb-24 md:gap-10 lg:py-10"
+        >
+          <motion.div variants={fadeInUp}>
             {/* Logo */}
             <Image
               width={200}
@@ -24,12 +29,7 @@ const Group = () => {
             ></Image>
           </motion.div>
           {/* Intro Message */}
-          <motion.div
-            variants={useFadeInUpDelay(0.75)}
-            initial="hidden"
-            animate="show"
-            className="max-w-3xl"
-          >
+          <motion.div variants={fadeInUp} className="max-w-3xl">
             <h2 className="pb-10 bold-32 text-center text-gold-100">
               YMT Toronto Lion Dance
             </h2>
@@ -47,12 +47,7 @@ const Group = () => {
           </motion.div>
 
           {/* Book Button */}
-          <motion.div
-            variants={useFadeInUpDelay(1)}
-            initial="hidden"
-            animate="show"
-            className="flexCenter mb-10 py-5"
-          >
+          <motion.div variants={fadeInUp} className="flexCenter mb-10 py-5">
             <Link href="/booking">
               <button className="px-16 py-2 regular-32 shadow-md bg-gold-100 text-white rounded-lg hover:bg-gold-120">
                 Book Now ↗
@@ -62,9 +57,7 @@ const Group = () => {
 
           {/* Previous Clients */}
           <motion.div
-            variants={useFadeInUpDelay(1.25)}
-            initial="hidden"
-            animate="show"
+            variants={fadeInUp}
             className="flex flex-col gap-10 mb-10"
           >
             <p className="mb-5 regular-18 text-center text-gold-100">
@@ -99,8 +92,8 @@ const Group = () => {
           >
             <img src="/group.jpg" alt="group photo"></img>
           </motion.div>
-        </AnimatePresence>
-      </div>
+        </motion.div>
+      </AnimatePresence>
     </section>
   );
 };

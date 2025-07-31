@@ -1,27 +1,42 @@
 "use client";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useFadeInRightDelay } from "@/constants/motionVariants";
+import {
+  staggerContainer,
+  useFadeInRightDelay,
+  fadeInRight,
+} from "@/constants/motionVariants";
 
 const about = () => {
   return (
     <AnimatePresence>
-      <div className="max-container padding-container flex flex-col gap-16 my-10">
-        <motion.h1
-          variants={useFadeInRightDelay(0.1)}
-          initial="hidden"
-          animate="show"
-          className="bold-32 text-gold-100"
-        >
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        animate="show"
+        className="max-container padding-container flex flex-col gap-16 my-10"
+      >
+        <motion.h1 variants={fadeInRight} className="bold-32 text-gold-100">
           About YMT
         </motion.h1>
-        <section>
-          <motion.div
-            variants={useFadeInRightDelay(0.25)}
-            initial="hidden"
-            animate="show"
-            className="flex flex-col gap-5"
-          >
+        <motion.div variants={fadeInRight}>
+          <h2 className="bold-20 mb-10 text-gold-100">
+            Heart of The Lion - YMT Lion Dance Documentary, Toronto
+          </h2>
+          <div className="w-full max-w-[854px] max-h-[480px] mx-auto aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/KaubRCbi7Bc?si=VCsVydF_4hL6SFlm"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+        </motion.div>
+
+        <div>
+          <motion.div variants={fadeInRight} className="flex flex-col gap-5">
             <h2 className="bold-20 text-gold-100">
               YMT Lion Dance – Introduction & History
             </h2>
@@ -32,15 +47,10 @@ const about = () => {
               captivating performances that celebrate both culture and sport.
             </p>
           </motion.div>
-        </section>
+        </div>
 
-        <section className="flex flex-col gap-5">
-          <motion.div
-            variants={useFadeInRightDelay(0.5)}
-            initial="hidden"
-            animate="show"
-            className="flex flex-col gap-5"
-          >
+        <div className="flex flex-col gap-5">
+          <motion.div variants={fadeInRight} className="flex flex-col gap-5">
             <h2 className="bold-20 text-gold-100">Our History</h2>
 
             <p className="text-justify regular-18">
@@ -55,12 +65,7 @@ const about = () => {
             </p>
           </motion.div>
 
-          <motion.div
-            variants={useFadeInRightDelay(0.75)}
-            initial="hidden"
-            animate="show"
-            className="flex flex-col gap-5"
-          >
+          <motion.div variants={fadeInRight} className="flex flex-col gap-5">
             <p className="text-justify regular-18">
               YMT operates with a well-organized approach, ensuring long-term
               growth and development. The team values teamwork, inclusivity,
@@ -75,8 +80,8 @@ const about = () => {
               art of lion dance forward.
             </p>
           </motion.div>
-        </section>
-      </div>
+        </div>
+      </motion.div>
     </AnimatePresence>
   );
 };
