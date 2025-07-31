@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      
       colors: {
         gold: {
           100: '#C5A650',
