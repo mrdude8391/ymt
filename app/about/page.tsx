@@ -6,6 +6,7 @@ import {
   useFadeInRightDelay,
   fadeInRight,
 } from "@/constants/motionVariants";
+import YTVideo from "@/components/YTVideo";
 
 const about = () => {
   return (
@@ -20,19 +21,10 @@ const about = () => {
           About YMT
         </motion.h1>
         <motion.div variants={fadeInRight}>
-          <h2 className="bold-20 mb-10 text-gold-100">
-            Heart of The Lion - YMT Lion Dance Documentary, Toronto
-          </h2>
-          <div className="w-full max-w-[854px] max-h-[480px] mx-auto aspect-video">
-            <iframe
-              src="https://www.youtube.com/embed/KaubRCbi7Bc?si=VCsVydF_4hL6SFlm"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              className="w-full h-full"
-            />
-          </div>
+          <YTVideo
+            title="Heart of The Lion - YMT Lion Dance Documentary, Toronto"
+            src="https://www.youtube.com/embed/KaubRCbi7Bc?si=VCsVydF_4hL6SFlm"
+          />
         </motion.div>
 
         <div>
