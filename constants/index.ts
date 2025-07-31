@@ -14,9 +14,9 @@ export const MEDIA_ICONS = [
 ]
 
 export const MEDIA_VIDEOS = [
-  { title: 'interview-1', src: './interview-1.mp4' ,type:'video/mp4'},
-  { title: 'interview-2', src: './interview-2.mp4' ,type:'video/mp4'},
-  { title: 'interview-3', src: './interview-3.mp4' ,type:'video/mp4'}
+  { title:"YMT Lion Dance - CNY 2025 YEAR OF THE 🐍 RECAP", src:"https://www.youtube.com/embed/HXlENiEkwgY?si=TWUn8pBjede0sGfD"},
+  { title:"Toronto Lion Dance, Wai Mo Promo 2024 | 加拿大威武醒獅團", src:"https://www.youtube.com/embed/gxz5X_cH26Q?si=iSglglQkQ6ko3KXH"},
+  { title:"Canadian National Lion Dance Championships 2024 加拿大全國舞獅錦標賽", src:"https://www.youtube.com/embed/QP8lCNFtHm4?si=WZgbW1ub7wkm0t9h"}
 
 ]
 
