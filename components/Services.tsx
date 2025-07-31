@@ -12,7 +12,7 @@ const Services = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, margin: "-100px" }}
-            className="bold-52 text-gold-100"
+            className="bold-52 text-gold-100 text-center"
           >
             Our Services
           </motion.h1>
