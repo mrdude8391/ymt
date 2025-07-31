@@ -49,7 +49,7 @@ const BookingForm = () => {
         <div className="flex gap-4 flex-col">
           {/* Name */}
           <div>
-            <label className="block font-semibold">
+            <label className="form-label">
               Name <span className="text-red-500">*</span>
             </label>
             <input
@@ -57,13 +57,13 @@ const BookingForm = () => {
               name="name"
               placeholder="Name "
               required
-              className="text-black w-full border p-2 rounded"
+              className="form-input"
             />
           </div>
 
           {/* Email */}
           <div>
-            <label className="block font-semibold">
+            <label className="form-label">
               Email <span className="text-red-500">*</span>
             </label>
             <input
@@ -71,13 +71,13 @@ const BookingForm = () => {
               name="email"
               placeholder="Email"
               required
-              className="text-black w-full border p-2 rounded"
+              className="form-input"
             />
           </div>
 
           {/* Phone */}
           <div>
-            <label className="block font-semibold">
+            <label className="form-label">
               Phone Number <span className="text-red-500">*</span>
             </label>
             <input
@@ -88,20 +88,16 @@ const BookingForm = () => {
               maxLength={15}
               placeholder="Phone"
               required
-              className="text-black w-full border p-2 rounded"
+              className="form-input"
             />
           </div>
 
           {/* Event Type */}
           <div>
-            <label className="block font-semibold">
+            <label className="form-label">
               Event Type <span className="text-red-500">*</span>
             </label>
-            <select
-              name="type"
-              required
-              className="text-black w-full border p-2 rounded"
-            >
+            <select name="type" required className="form-input">
               <option value="">Select an event type</option>
               <option value="Wedding">Wedding</option>
               <option value="Corporate Celebration">
@@ -115,14 +111,10 @@ const BookingForm = () => {
 
           {/* Number of Lions */}
           <div>
-            <label className="block font-semibold">
+            <label className="form-label">
               Number of Lions <span className="text-red-500">*</span>
             </label>
-            <select
-              name="lions"
-              required
-              className="text-black w-full border p-2 rounded"
-            >
+            <select name="lions" required className="form-input">
               <option value="">Select a number</option>
               {[...Array(10)].map((_, i) => (
                 <option key={i + 1} value={i + 1}>
@@ -134,25 +126,18 @@ const BookingForm = () => {
 
           {/* Date */}
           <div>
-            <label className="block font-semibold">
+            <label className="form-label">
               Date <span className="text-red-500">*</span>
             </label>
-            <input
-              type="date"
-              name="date"
-              required
-              className="text-black w-full border p-2 rounded"
-            />
+            <input type="date" name="date" required className="form-input" />
           </div>
 
           {/* Details (optional) */}
           <div>
-            <label className="block font-semibold">
-              Additional Details (optional)
-            </label>
+            <label className="form-label">Additional Details (optional)</label>
             <textarea
               name="message"
-              className="text-black w-full border p-2 rounded"
+              className="text-black w-full border p-3 rounded-xl"
               rows={4}
             />
           </div>

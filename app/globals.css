@@ -32,6 +32,14 @@ h2 {
   font-family: "Spartan";
 }
 
+.form-label {
+  @apply block font-semibold pb-2.5;
+}
+
+.form-input {
+  @apply text-black w-full border py-3 px-4 rounded-full;
+}
+
 @layer utilities {
   .flexBetween {
     @apply flex items-center justify-between;
