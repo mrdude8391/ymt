@@ -7,7 +7,7 @@ interface YTVProps {
 
 const YTVideo = ({ title, src }: YTVProps) => {
   return (
-    <div>
+    <div className="mb-14">
       <h2 className="bold-20 mb-10 text-gold-100">{title}</h2>
       <div className="w-full max-w-[854px] max-h-[480px] mx-auto aspect-video">
         <iframe
