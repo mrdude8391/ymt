@@ -17,13 +17,13 @@ const Navbar = () => {
           <Link href="/" onClick={closeMenu}>
             <div className="flexCenter gap-5">
               <Image src="/ymt-logo.png" alt="logo" width={54} height={54} />
-              <p className="regular-18 text-gray-50 flexCenter transition-all hover:font-bold">
+              <p className="regular-18 font-[spartan] text-gray-50 flexCenter transition-all hover:font-bold">
                 YMT Lion Dance
               </p>
             </div>
           </Link>
 
-          <ul className="hidden h-full gap-12 lg:flex">
+          <ul className="hidden font-[spartan] h-full gap-12 lg:flex">
             {NAV_LINKS.map((link) => (
               <Link
                 href={link.href}

@@ -44,7 +44,7 @@ export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
       >
         {isOpen && (
           <nav className="py-4 ">
-            <ul className="shadow-lg space-y-4  flexEnd flex-col p-2">
+            <ul className="shadow-lg space-y-4 font-[spartan] flexEnd flex-col p-2">
               {NAV_LINKS.map((link) => (
                 <Link
                   href={link.href}
