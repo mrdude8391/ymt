@@ -4,6 +4,7 @@ import { LIONS, LEDLIONS } from "@/constants";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useFadeInRightDelay } from "@/constants/motionVariants";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 const page = () => {
   return (
@@ -22,16 +23,7 @@ const page = () => {
               <div className="flex flex-col flex-initial justify-center">
                 <ul className="flex justify-evenly flex-col flex-wrap lg:grid-cols-1 gap-16 my-10">
                   {LIONS.map((lion) => (
-                    <div>
-                      <Image
-                        src={lion.image}
-                        alt="lion picture"
-                        width={400}
-                        height={400}
-                      />
-                      <span>{lion.name}. </span>
-                      <span>{lion.colors}</span>
-                    </div>
+                    <LionPic key={lion.name} lion={lion} />
                   ))}
                 </ul>
               </div>
@@ -42,16 +34,7 @@ const page = () => {
               <div className="flex flex-col flex-initial justify-center">
                 <ul className="flex justify-evenly flex-col flex-wrap lg:grid-cols-1 gap-16 my-10">
                   {LEDLIONS.map((lion) => (
-                    <div>
-                      <Image
-                        src={lion.image}
-                        alt="lion picture"
-                        width={400}
-                        height={400}
-                      />
-                      <span>{lion.name}. </span>
-                      <span>{lion.colors}</span>
-                    </div>
+                    <LionPic key={lion.name} lion={lion} />
                   ))}
                 </ul>
               </div>
@@ -64,3 +47,27 @@ const page = () => {
 };
 
 export default page;
+
+const LionPic = (props: {
+  lion: {
+    name: string;
+    colors: string;
+    image: string;
+  };
+}) => {
+  const { lion } = props;
+  return (
+    <div className="flex flex-col">
+      <img
+        src={lion.image}
+        alt={`lion picture ${lion.name} ${lion.colors}`}
+        width={400}
+        height={"auto"}
+      />
+      <div className="font-[spartan]  p-4">
+        <p className="text-start absolute justify-start">{lion.name}.</p>
+        <p className="text-center">{lion.colors}</p>
+      </div>
+    </div>
+  );
+};
