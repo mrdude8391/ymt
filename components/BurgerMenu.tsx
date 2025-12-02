@@ -11,7 +11,7 @@ interface BurgerMenuProps {
 
 export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
   return (
-    <div className="relative lg:hidden">
+    <div className=" lg:hidden">
       {/* menu button */}
       <button
         className="inline-block cursor-pointer lg:hidden"
@@ -38,12 +38,11 @@ export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
 
       {/* menu */}
       <div
-        className={`fixed bottom-0 left-0 top-16 mt-3 w-full h-full bg-black shadow-md transform ${
-          isOpen ? "opacity-100  translate-y-0.5" : "opacity-0 translate-y-full"
-        } transition-opacity duration-300`}
+        className={`absolute top-[100%] left-0 right-0 h-0 opacity-0 overflow-hidden bg-neutral-900 shadow-md transform transition-all duration-300
+          ${isOpen ? "opacity-100 h-lvh max-h-lvh" : ""}`}
       >
         {isOpen && (
-          <nav className="py-4 ">
+          <nav className="py-4 h-full ">
             <ul className="shadow-lg space-y-4 font-[spartan] flexEnd flex-col p-2">
               {NAV_LINKS.map((link) => (
                 <Link
