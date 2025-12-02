@@ -38,8 +38,8 @@ export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
 
       {/* menu */}
       <div
-        className={`absolute top-[100%] left-0 right-0 h-0 opacity-0 overflow-hidden bg-neutral-900 shadow-md transform transition-all duration-300
-          ${isOpen ? "opacity-100 h-lvh max-h-lvh" : ""}`}
+        className={`absolute top-[100%] left-0 right-0 h-0 overflow-hidden bg-black  transition-all duration-300 ease
+          ${isOpen ? "h-lvh max-h-lvh" : ""}`}
       >
         {isOpen && (
           <nav className="py-4 h-full ">
