@@ -6,7 +6,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-gray-90 text-gray-20 flexCenter py-10">
+      <footer className="bg-gray-90 text-gray-20 flexCenter py-8">
         <div className="max-container padding-container flex w-full flex-col gap-10">
           {/* Line break 
           <hr className="shadow" />
@@ -82,6 +82,21 @@ const Footer = () => {
                 <p>📧 ymtliondance@outlook.com</p>
               </div>
             </div>
+          </div>
+          <hr className="opacity-20" />
+          <div className="self-ad w-full flex items-center justify-center ">
+            <p>
+              Website designed and built by{" "}
+              <span>
+                <a
+                  href="https://branflakes.vercel.app/"
+                  target="_blank"
+                  className="underline"
+                >
+                  Jr-Chee Hu
+                </a>
+              </span>
+            </p>
           </div>
         </div>
       </footer>
