@@ -89,7 +89,7 @@ const Footer = () => {
               Website designed and built by{" "}
               <span>
                 <a
-                  href="https://branflakes.vercel.app/"
+                  href="https://jrcheehu.vercel.app/"
                   target="_blank"
                   className="underline"
                 >
