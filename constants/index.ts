@@ -20,22 +20,38 @@ export const MEDIA_VIDEOS = [
 
 ]
 
-export const LIONS = [
+// export const LIONS = [
   
-  { name: 'A' , colors: "Red/Silver", image: '/YMT Lions/LionProfiles/red_silver.jpg'},
-  { name: 'B' , colors: "Red/Gold", image: '/YMT Lions/LionProfiles/red_gold.jpeg'}, 
-  { name: 'C' , colors: "Red/Gold + Black", image: '/YMT Lions/LionProfiles/red_gold_black.png'},
-  { name: 'D' , colors: "Yellow/Gold", image: '/YMT Lions/LionProfiles/yellow_gold.jpeg'},
-  { name: 'E' , colors: "Yellow/Gold + Black", image: '/YMT Lions/LionProfiles/yellow_gold_black.png'},
-  { name: 'F' , colors: "White/Gold", image: '/YMT Lions/LionProfiles/white_gold.jpeg'},
-  { name: 'G' , colors: "White/Purple", image: '/YMT Lions/LionProfiles/white_purple.jpeg'},
-  { name: 'H' , colors: "Black/Gold", image: '/YMT Lions/LionProfiles/black_yellow.jpeg'},
+//   { name: 'A' , colors: "Red/Silver", image: '/YMT Lions/LionProfiles/red_silver.jpg'},
+//   { name: 'B' , colors: "Red/Gold", image: '/YMT Lions/LionProfiles/red_gold.jpeg'}, 
+//   { name: 'C' , colors: "Red/Gold + Black", image: '/YMT Lions/LionProfiles/red_gold_black.png'},
+//   { name: 'D' , colors: "Yellow/Gold", image: '/YMT Lions/LionProfiles/yellow_gold.jpeg'},
+//   { name: 'E' , colors: "Yellow/Gold + Black", image: '/YMT Lions/LionProfiles/yellow_gold_black.png'},
+//   { name: 'F' , colors: "White/Gold", image: '/YMT Lions/LionProfiles/white_gold.jpeg'},
+//   { name: 'G' , colors: "White/Purple", image: '/YMT Lions/LionProfiles/white_purple.jpeg'},
+//   { name: 'H' , colors: "Black/Gold", image: '/YMT Lions/LionProfiles/black_yellow.jpeg'},
 
+// ]
+
+// export const LEDLIONS = [
+//   { name: 'L1', colors: 'White/Blue', image: '/YMT Lions/LionProfiles/LED_white_blue.png'},
+//   { name: 'L2', colors: 'White/Green', image: '/YMT Lions/LionProfiles/LED_white_green.jpg'}
+// ]
+
+export const HEADSHOTS = [
+  { name: 'A' , colors: "Red/Silver", image: '/YMT Lions/headshots/red_silver.jpg'},
+  { name: 'B' , colors: "Red/Gold", image: '/YMT Lions/headshots/red_gold.jpg'}, 
+  { name: 'C' , colors: "Red/Gold + Black", image: '/YMT Lions/headshots/red_gold_black.jpg'},
+  { name: 'D' , colors: "Yellow/Gold", image: '/YMT Lions/headshots/yellow_gold.jpg'},
+  { name: 'E' , colors: "Yellow/Gold + Black", image: '/YMT Lions/headshots/yellow_gold_black.jpg'},
+  { name: 'F' , colors: "White/Gold", image: '/YMT Lions/headshots/white_gold.jpg'},
+  { name: 'G' , colors: "White/Purple", image: '/YMT Lions/headshots/white_purple.jpg'},
+  { name: 'H' , colors: "Black/Gold", image: '/YMT Lions/headshots/yellow_gold_black.jpg'},
 ]
 
-export const LEDLIONS = [
-  { name: 'L1', colors: 'White/Blue', image: '/YMT Lions/LionProfiles/LED_white_blue.png'},
-  { name: 'L2', colors: 'White/Green', image: '/YMT Lions/LionProfiles/LED_white_green.jpg'}
+export const HEADSHOTSLED = [
+  { name: 'L1', colors: 'White/Blue', image: '/YMT Lions/headshots/white_blue.jpg'},
+  { name: 'L2', colors: 'White/Green', image: '/YMT Lions/headshots/white_green.jpg'}
 ]
 
 export const LOGOS = [
