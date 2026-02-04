@@ -57,7 +57,7 @@ const Event = (props: { event: Event }) => {
   return (
     <>
       {/* Desktop Screens > lg size */}
-      <li className="hidden lg:grid grid-cols-2 lg:grid-cols-5 event-container border-t border-t-gray-90 pt-2 pb-4 font-[spartan] ">
+      <li className="hidden lg:grid grid-cols-2 lg:grid-cols-5 event-container border-t border-t-white/10 pt-2 pb-4 font-[spartan] ">
         <p className="text-2xl col-span-2">{event.location}</p>
         <p className="text-lg font-light">
           {date.toLocaleDateString("en-US", {
