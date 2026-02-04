@@ -16,13 +16,11 @@ const page = () => {
       >
         <h1 className="bold-32 text-gold-100">Media</h1>
         <section className="flexCenter flex-col gap-10 mb-10">
-          <div>
-            <ul className="max-container padding-container flex flex-col gap-16 my-10 ">
-              {MEDIA_VIDEOS.map((video) => (
-                <YTVideo title={video.title} src={video.src} />
-              ))}
-            </ul>
-          </div>
+          <ul className="max-container padding-container flex flex-col gap-16 my-10 ">
+            {MEDIA_VIDEOS.map((video) => (
+              <YTVideo title={video.title} src={video.src} />
+            ))}
+          </ul>
         </section>
       </motion.div>
     </AnimatePresence>
