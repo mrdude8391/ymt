@@ -49,7 +49,7 @@ export const HEADSHOTS = [
   { name: 'H' , colors: "Black/Gold", image: '/YMT Lions/headshots/yellow_gold_black.jpg'},
 ]
 
-export const HEADSHOTSLED = [
+export const HEADSHOTS_LED = [
   { name: 'L1', colors: 'White/Blue', image: '/YMT Lions/headshots/white_blue.jpg'},
   { name: 'L2', colors: 'White/Green', image: '/YMT Lions/headshots/white_green.jpg'}
 ]
