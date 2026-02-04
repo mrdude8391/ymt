@@ -12,7 +12,7 @@ const Services = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, margin: "-100px" }}
-            className="bold-52 text-gold-100 text-center"
+            className="text-6xl text-gold-100 text-center"
           >
             Our Services
           </motion.h1>
@@ -25,16 +25,14 @@ const Services = () => {
               viewport={{ once: true, margin: "-75px" }}
               className="flex flex-col justify-between gap-10 py-5 px-5"
             >
-              <h2 className="text-center regular-32 text-gold-100 ">
-                Weddings
-              </h2>
+              <h2 className="text-center text-gold-100 ">Weddings</h2>
               <div className="flexCenter flex-col gap-5">
                 <img
                   src="/wedding.jpeg"
                   alt="wedding"
                   className="h-96 w-96 object-cover"
                 ></img>
-                <p className="text-center p-5 md:regular-24 ">
+                <p className="text-center p-5 md:text-2xl ">
                   Make your special day unforgettable!
                 </p>
               </div>
@@ -46,7 +44,7 @@ const Services = () => {
               viewport={{ once: true, margin: "-75px" }}
               className="flex flex-col justify-between gap-10 py-5 px-5"
             >
-              <h2 className="text-center regular-32 text-gold-100">
+              <h2 className="text-center text-gold-100">
                 Special Celebrations
               </h2>
               <div className="flexCenter flex-col gap-5">
@@ -55,7 +53,7 @@ const Services = () => {
                   alt="special"
                   className="h-96 w-96 object-cover"
                 ></img>
-                <p className="text-center p-5 md:regular-24">
+                <p className="text-center p-5 md:text-2xl ">
                   Add excitement to your party!
                 </p>
               </div>
@@ -67,16 +65,14 @@ const Services = () => {
               viewport={{ once: true, margin: "-75px" }}
               className="flex flex-col justify-between gap-10 py-5 px-5"
             >
-              <h2 className="text-center regular-32 text-gold-100">
-                Corporate Events
-              </h2>
+              <h2 className="text-center text-gold-100">Corporate Events</h2>
               <div className="flexCenter flex-col gap-5">
                 <img
                   src="/corporate.jpeg"
                   alt="corporate events"
                   className="h-96 w-96 object-cover"
                 ></img>
-                <p className="text-center p-5 md:regular-24">
+                <p className="text-center p-5 md:text-2xl ">
                   Impress clients and boost morale!
                 </p>
               </div>

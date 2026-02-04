@@ -48,7 +48,7 @@ export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
                 <Link
                   href={link.href}
                   key={link.key}
-                  className="regular-24 text-gray-10 hover:font-bold"
+                  className="text-3xl font-bold text-gray-10 hover:font-extrabold"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

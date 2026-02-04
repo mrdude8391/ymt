@@ -15,9 +15,9 @@ const about = () => {
         variants={staggerContainer}
         initial="hidden"
         animate="show"
-        className="max-container padding-container flex flex-col gap-16 my-10"
+        className="max-container padding-container flex flex-col gap-16 mt-10 mb-32"
       >
-        <motion.h1 variants={fadeInRight} className="bold-32 text-gold-100">
+        <motion.h1 variants={fadeInRight} className="text-gold-100">
           About YMT
         </motion.h1>
         <motion.div variants={fadeInRight}>

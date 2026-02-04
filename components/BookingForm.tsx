@@ -39,7 +39,7 @@ const BookingForm = () => {
           console.log("FAILED...", error.text);
           console.log(form.current);
           alert("Failed to send message. Try again later.");
-        }
+        },
       );
   };
 
@@ -143,7 +143,7 @@ const BookingForm = () => {
           </div>
 
           <button
-            className="px-16 py-2 regular-24 shadow-md bg-gold-100 text-white rounded-md hover:bg-gold-120"
+            className="px-16 py-2 text-3xl shadow-md bg-gold-100 text-white rounded-md hover:bg-gold-120"
             type="submit"
             value="Send"
           >

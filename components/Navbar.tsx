@@ -17,7 +17,7 @@ const Navbar = () => {
           <Link href="/" onClick={closeMenu}>
             <div className="flexCenter gap-5">
               <Image src="/ymt-logo.png" alt="logo" width={54} height={54} />
-              <p className="regular-18 font-[spartan] text-gray-50 flexCenter transition-all hover:font-bold">
+              <p className="text-2xl font-bold text-gray-50 flexCenter transition-all hover:font-extrabold">
                 YMT Lion Dance
               </p>
             </div>

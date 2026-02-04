@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      fontFamily: {
+        variable: ['Spartan', 'sans-serif'],
+      },
       colors: {
         gold: {
           100: '#C5A650',

@@ -30,10 +30,10 @@ const Group = () => {
           </motion.div>
           {/* Intro Message */}
           <motion.div variants={fadeInUp} className="max-w-3xl">
-            <h2 className="pb-10 bold-32 text-center text-gold-100">
+            <h2 className="pb-10  text-center text-gold-100">
               YMT Toronto Lion Dance
             </h2>
-            <p className="text-justify regular-18">
+            <p className="text-justify ">
               YMT Toronto Lion Dance – Yi Mo Tong is a team with a rich legacy
               in the art of lion dance, building on over 25 years of experience.
               For the past decade, we established a blend of athleticism and
@@ -49,7 +49,7 @@ const Group = () => {
           {/* Book Button */}
           <motion.div variants={fadeInUp} className="flexCenter mb-10 py-5">
             <Link href="/booking">
-              <button className="px-16 pt-4 py-2 regular-32 shadow-md bg-gold-100 text-white rounded-lg hover:bg-gold-120 font-[spartan]">
+              <button className="px-16 pt-4 py-2 text-4xl shadow-md bg-gold-100 text-white rounded-lg hover:bg-gold-120 font-[spartan]">
                 Book Now ↗
               </button>
             </Link>
@@ -60,7 +60,7 @@ const Group = () => {
             variants={fadeInUp}
             className="flex flex-col gap-10 mb-10"
           >
-            <p className="mb-5 regular-18 text-center text-gold-100">
+            <p className="mb-5 text-center text-gold-100">
               Join our satisfied clients
             </p>
             <div className="grid grid-cols-3 lg:grid-cols-6 gap-3 ">
