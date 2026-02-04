@@ -60,7 +60,7 @@ export const SCHEDULE = [
         date: "Sunday, February 15",
         events: [
             {date: "Sunday, February 15", time:'12:30 PM', location:"Chinese Culteral Center", address:"5183 Sheppard Ave E, Scarborough"},
-            {date: "Sunday, February 15", time:'12:30', location:"The Well", address:"486 Front St W, Toronto"},
+            {date: "Sunday, February 15", time:'12:30 PM', location:"The Well", address:"486 Front St W, Toronto"},
             {date: "Sunday, February 15", time:'2:30 PM', location:"Royal Ontario Museum", address:"100 Queens Park, Toronto"},
             {date: "Sunday, February 15", time:'3:00 PM', location:"Upper Canada Mall", address:"17600 Yonge St, Newmarket"},
             {date: "Sunday, February 15", time:'3:30 PM', location:"Royal Ontario Museum", address:"100 Queens Park, Toronto"},
