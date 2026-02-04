@@ -23,12 +23,12 @@ const Navbar = () => {
             </div>
           </Link>
 
-          <ul className="hidden font-[spartan] h-full gap-12 lg:flex">
+          <ul className="hidden font-[spartan] h-full lg:gap-8 xl:gap-12 lg:flex">
             {NAV_LINKS.map((link) => (
               <Link
                 href={link.href}
                 key={link.key}
-                className="regular-16 text-gray-50 flexCenter  transition-all hover:font-bold"
+                className="text-lg xl:text-xl font-semibold text-gray-50 flexCenter  transition-all hover:font-bold"
                 onClick={closeMenu}
               >
                 {link.label}
