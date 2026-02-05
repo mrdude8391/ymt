@@ -2,7 +2,7 @@
 import { useFadeInRightDelay } from "@/constants/motionVariants";
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
-import { SCHEDULE } from "@/constants/schedule";
+import { ScheduleDay, SCHEDULE } from "@/constants/schedule";
 
 const page = () => {
   return (
@@ -16,15 +16,36 @@ const page = () => {
         <h1 className="bold-32 text-gold-100">Schedule</h1>
         <section className="flexCenter flex-col gap-10 mb-10">
           <div className="container">
-            <h3 className="mb-4">2026 Lunar New Year Performances Schedule</h3>
+            <h2 className="mb-8">2026 Lunar New Year Performances Schedule</h2>
             <div className="container-inner">
               <ul className="day-list flex flex-col gap-4">
-                {SCHEDULE.map((day) => (
+                {SCHEDULE.map((day: ScheduleDay) => (
                   <li
-                    key={day.date}
-                    className="day-container py-2 border-t-white border-t"
+                    key={day.date.toLocaleDateString("en-US", {
+                      month: "numeric",
+                      day: "numeric",
+                    })}
+                    className="day-container py-2"
                   >
-                    <h4 className="mb-8">{day.date}</h4>
+                    <div className="flex w-full">
+                      {/* Desktop View */}
+                      <h3 className="hidden lg:block mb-8">
+                        {day.date.toLocaleDateString("en-US", {
+                          month: "long",
+                          day: "numeric",
+                          weekday: "long",
+                        })}
+                      </h3>
+                      {/* Mobile View */}
+                      <h3 className="lg:hidden mb-8">
+                        {day.date.toLocaleDateString("en-US", {
+                          month: "short",
+                          day: "numeric",
+                          weekday: "long",
+                        })}
+                      </h3>
+                      <hr className="flex-grow m-3  border-b-white"></hr>
+                    </div>
                     <ul className="events-list">
                       {day.events.map((event) => (
                         <Event key={event.time} event={event} />
@@ -43,14 +64,14 @@ const page = () => {
 
 export default page;
 
-interface Event {
-  date: string;
+interface EventProps {
+  date: Date;
   time: string;
   location: string;
   address: string;
 }
 
-const Event = (props: { event: Event }) => {
+const Event = (props: { event: EventProps }) => {
   const { event } = props;
   const date = new Date(event.date);
 
