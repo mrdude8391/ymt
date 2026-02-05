@@ -44,7 +44,7 @@ const page = () => {
                           weekday: "long",
                         })}
                       </h3>
-                      <hr className="flex-grow m-3  border-b-white"></hr>
+                      <hr className="flex-grow m-3.5  bg-white"></hr>
                     </div>
                     <ul className="events-list">
                       {day.events.map((event) => (
