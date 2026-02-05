@@ -3,6 +3,7 @@ import { useFadeInRightDelay } from "@/constants/motionVariants";
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import { ScheduleDay, SCHEDULE } from "@/constants/schedule";
+import OpenInMapsButton from "@/components/OpenInMapsButton";
 
 const page = () => {
   return (
@@ -87,14 +88,16 @@ const Event = (props: { event: EventProps }) => {
           })}
         </p>
         <p className="text-lg font-light">{event.time}</p>
-        <p className="text-lg">{event.address}</p>
+        <OpenInMapsButton address={event.address}></OpenInMapsButton>
+        {/* <p className="text-lg">{event.address}</p> */}
       </li>
 
       {/* Mobile Screens < lg size */}
       <li className="grid grid-cols-3 lg:hidden event-container border-t border-t-gray-90 pt-2 pb-4 font-[spartan] ">
         <div className="col-span-2">
           <h4 className="font-semibold">{event.location}</h4>
-          <p className="text-lg">{event.address}</p>
+          <OpenInMapsButton address={event.address}></OpenInMapsButton>
+          {/* <p className="text-lg">{event.address}</p> */}
         </div>
         <div>
           <p className="text-md text-end">

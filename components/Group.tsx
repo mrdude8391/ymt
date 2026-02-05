@@ -28,11 +28,21 @@ const Group = () => {
               alt="YMT Logo"
             ></Image>
           </motion.div>
+
           {/* Intro Message */}
-          <motion.div variants={fadeInUp} className="max-w-3xl">
+          <motion.div
+            variants={fadeInUp}
+            className="max-w-3xl flex flex-col items-center"
+          >
+            <Link href="/schedule">
+              <button className="px-8 py-2 text-2xl mb-8 shadow-md rounded-lg text-white bg-gold-100 hover:bg-gold-120 ">
+                2026 Lunar New Year Performance Schedule
+              </button>
+            </Link>
             <h2 className="pb-10  text-center text-gold-100">
               YMT Toronto Lion Dance
             </h2>
+
             <p className="text-justify ">
               YMT Toronto Lion Dance – Yi Mo Tong is a team with a rich legacy
               in the art of lion dance, building on over 25 years of experience.
