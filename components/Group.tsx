@@ -70,8 +70,8 @@ const Group = () => {
             variants={fadeInUp}
             className="flex flex-col gap-10 mb-10"
           >
-            <p className="mb-5 text-center text-gold-100">
-              Join our satisfied clients
+            <p className="mb-5 font-semibold text-center text-gold-100">
+              Join our satisfied clients!
             </p>
             <div className="grid grid-cols-3 lg:grid-cols-6 gap-3 ">
               {LOGOS.map((link, idx) => (
