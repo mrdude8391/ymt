@@ -473,12 +473,6 @@ export const SCHEDULE = [
         location: "DDSB School",
         address: "Private Performance",
       },
-      {
-        date: new Date("Thursday, February 19, 2026"),
-        time: "6:00 PM",
-        location: "Sky Dragon Restaurant",
-        address: "280 Spadina Ave, Toronto",
-      },
     ],
   },
   {
