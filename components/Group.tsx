@@ -34,11 +34,12 @@ const Group = () => {
             variants={fadeInUp}
             className="max-w-3xl flex flex-col items-center"
           >
-            <Link href="/schedule">
+            {/* 2026 Schedule */}
+            {/* <Link href="/schedule">
               <button className="px-8 py-2 text-2xl mb-8 shadow-md rounded-lg text-white bg-gold-100 hover:bg-gold-120 ">
                 2026 Lunar New Year Performance Schedule
               </button>
-            </Link>
+            </Link> */}
             <h2 className="pb-10  text-center text-gold-100">
               YMT Toronto Lion Dance
             </h2>

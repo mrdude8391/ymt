@@ -60,7 +60,6 @@ const BookingForm = () => {
               className="form-input"
             />
           </div>
-
           {/* Email */}
           <div>
             <label className="form-label">
@@ -74,7 +73,6 @@ const BookingForm = () => {
               className="form-input"
             />
           </div>
-
           {/* Phone */}
           <div>
             <label className="form-label">
@@ -91,7 +89,6 @@ const BookingForm = () => {
               className="form-input"
             />
           </div>
-
           {/* Event Type */}
           <div>
             <label className="form-label">
@@ -108,7 +105,6 @@ const BookingForm = () => {
               <option value="Other">Other</option>
             </select>
           </div>
-
           {/* Number of Lions */}
           <div>
             <label className="form-label">
@@ -123,13 +119,26 @@ const BookingForm = () => {
               ))}
             </select>
           </div>
-
           {/* Date */}
           <div>
             <label className="form-label">
               Date <span className="text-red-500">*</span>
             </label>
             <input type="date" name="date" required className="form-input" />
+          </div>
+          {/* How Found */}
+          <div>
+            <label className="form-label">
+              How did you find out about us?{" "}
+              <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              name="find"
+              required
+              className="form-input"
+              placeholder="Youtube, Instagram, Google, Friend, etc."
+            />
           </div>
 
           {/* Details (optional) */}
@@ -141,7 +150,6 @@ const BookingForm = () => {
               rows={4}
             />
           </div>
-
           <button
             className="px-16 py-2 text-3xl shadow-md bg-gold-100 text-white rounded-md hover:bg-gold-120"
             type="submit"
