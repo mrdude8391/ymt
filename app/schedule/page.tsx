@@ -2,7 +2,7 @@
 import { useFadeInRightDelay } from "@/constants/motionVariants";
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
-import { ScheduleDay, SCHEDULE } from "@/constants/schedule";
+import { ScheduleDay, SCHEDULE_2026 } from "@/constants/schedule";
 import OpenInMapsButton from "@/components/OpenInMapsButton";
 
 const page = () => {
@@ -20,7 +20,7 @@ const page = () => {
             <h2 className="mb-8">2026 Lunar New Year Performances Schedule</h2>
             <div className="container-inner">
               <ul className="day-list flex flex-col gap-4">
-                {SCHEDULE.map((day: ScheduleDay) => (
+                {SCHEDULE_2026.map((day: ScheduleDay) => (
                   <li
                     key={day.date.toLocaleDateString("en-US", {
                       month: "numeric",
