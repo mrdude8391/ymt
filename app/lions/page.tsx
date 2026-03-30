@@ -15,7 +15,13 @@ const page = () => {
         animate="show"
         className="max-container padding-container flex flex-col gap-16 my-10"
       >
-        <h1 className="bold-32 text-gold-100">Meet the Lions</h1>
+        <h1 className="bold-32 text-gold-100">
+          Meet the Lions
+          <span>
+            <p>Traditional and LED</p>
+          </span>
+        </h1>
+
         <section className="body mb-10">
           <div className="body-inner flex flex-col gap-16 my-10">
             <MainLions />
