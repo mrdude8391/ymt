@@ -32,13 +32,17 @@ const BookingForm = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          alert("Message sent!");
+          alert(
+            "Booking request sent! A YMT member will follow up as soon as possible.",
+          );
           form.current?.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
           console.log(form.current);
-          alert("Failed to send message. Try again later.");
+          alert(
+            "Failed to send booking request. Please contact us using the information found at the bottom of the page or try again later.",
+          );
         },
       );
   };
@@ -55,7 +59,7 @@ const BookingForm = () => {
             <input
               type="text"
               name="name"
-              placeholder="Name "
+              placeholder="Name"
               required
               className="form-input"
             />
@@ -129,7 +133,7 @@ const BookingForm = () => {
           {/* How Found */}
           <div>
             <label className="form-label">
-              How did you find out about us?{" "}
+              How did you find out about us?
               <span className="text-red-500">*</span>
             </label>
             <input

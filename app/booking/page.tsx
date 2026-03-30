@@ -11,11 +11,11 @@ const page = () => {
         variants={useFadeInRightDelay(0.1)}
         initial="hidden"
         animate="show"
-        className="max-container padding-container flex flex-col my-10"
+        className="max-container padding-container flex flex-col my-12"
       >
         <h1 className="bold-32 text-gold-100">Booking</h1>
         <section>
-          <div className="max-container padding-container flexCenter  flex-col gap-16 my-10">
+          <div className="max-container padding-container flexCenter  flex-col gap-16 my-12">
             <BookingForm />
           </div>
         </section>
