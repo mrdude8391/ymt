@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
     <>
       <nav className="sticky w-full top-0 left-0 z-30 bg-gray-10">
-        <div className="flexBetween relative max-container padding-container z-30 py-3 bg-gray-10">
+        <div className="flexBetween relative max-container padding-container z-30 py-4 bg-gray-10">
           <Link href="/" onClick={closeMenu}>
-            <div className="flexCenter gap-5">
+            <div className="flexCenter gap-4">
               <Image src="/ymt-logo.png" alt="logo" width={54} height={54} />
               <p className="text-2xl font-bold text-gray-50 flexCenter transition-all hover:font-extrabold">
                 YMT Lion Dance

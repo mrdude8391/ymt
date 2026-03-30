@@ -11,7 +11,7 @@ interface BurgerMenuProps {
 
 export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
   return (
-    <div className=" lg:hidden">
+    <div className="lg:hidden">
       {/* menu button */}
       <button
         className="inline-block cursor-pointer lg:hidden"
@@ -36,9 +36,9 @@ export const BurgerMenu = ({ isOpen, setIsOpen }: BurgerMenuProps) => {
         )}
       </button>
 
-      {/* menu */}
+      {/* menu (closest relative parent is the menu bar)*/}
       <div
-        className={`absolute top-[100%] left-0 right-0 h-0 overflow-hidden bg-black  transition-all duration-300 ease
+        className={`absolute top-full left-0 right-0 h-0 overflow-hidden bg-black transition-all duration-300 ease
           ${isOpen ? "h-lvh max-h-lvh" : ""}`}
       >
         {isOpen && (
