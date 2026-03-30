@@ -9,7 +9,7 @@ import {
   useFadeInUpDelay,
 } from "@/constants/motionVariants";
 
-const Group = () => {
+const Hero = () => {
   return (
     <section>
       <AnimatePresence>
@@ -17,7 +17,7 @@ const Group = () => {
           variants={staggerContainer}
           initial="hidden"
           animate="show"
-          className=" max-container padding-container flexCenter flex-col gap-10 py-5 pb-24 md:gap-10 lg:py-10"
+          className=" max-container padding-container flexCenter flex-col gap-8 py-4 pb-24 md:gap-8 lg:py-12"
         >
           <motion.div variants={fadeInUp}>
             {/* Logo */}
@@ -40,7 +40,7 @@ const Group = () => {
                 2026 Lunar New Year Performance Schedule
               </button>
             </Link> */}
-            <h2 className="pb-10  text-center text-gold-100">
+            <h2 className="pb-8  text-center text-gold-100">
               YMT Toronto Lion Dance
             </h2>
 
@@ -58,7 +58,7 @@ const Group = () => {
           </motion.div>
 
           {/* Book Button */}
-          <motion.div variants={fadeInUp} className="flexCenter mb-10 py-5">
+          <motion.div variants={fadeInUp} className="flexCenter mb-8 py-4">
             <Link href="/booking">
               <button className="px-16 pt-4 py-2 text-4xl shadow-md bg-gold-100 text-white rounded-lg hover:bg-gold-120 font-[spartan]">
                 Book Now ↗
@@ -67,18 +67,15 @@ const Group = () => {
           </motion.div>
 
           {/* Previous Clients */}
-          <motion.div
-            variants={fadeInUp}
-            className="flex flex-col gap-10 mb-10"
-          >
-            <p className="mb-5 font-semibold text-center text-gold-100">
+          <motion.div variants={fadeInUp} className="flex flex-col gap-8 mb-8">
+            <p className="mb-2 font-semibold text-center text-gold-100">
               Join our satisfied clients!
             </p>
-            <div className="grid grid-cols-3 lg:grid-cols-6 gap-3 ">
+            <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 ">
               {LOGOS.map((link, idx) => (
                 <div
                   key={idx}
-                  className="relative h-12 w-auto my-5 flex items-center justify-center"
+                  className="relative h-12 w-auto my-4 flex items-center justify-center"
                 >
                   <Image
                     width={100}
@@ -109,4 +106,4 @@ const Group = () => {
   );
 };
 
-export default Group;
+export default Hero;
