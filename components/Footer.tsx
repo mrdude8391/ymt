@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
           
           {/* Sign Up Form */}
-            <div className="flex lg:flex-col gap-2 items-center justify-center">
+            <div className="flex lg:flex-col gap-2 items-center justify-center text-center">
               <a href="https://forms.gle/XpGNWQ5CCeqXA3ci9" target="_blank" className="text-lg font-medium text-blue-500 hover:underline">
                 Looking to join our team? Fill out our registration form today!
               </a>
