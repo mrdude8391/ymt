@@ -8,15 +8,10 @@ const Footer = () => {
     <>
       <footer className="bg-gray-90 text-gray-20 flexCenter py-8">
         <div className="max-container padding-container flex w-full flex-col gap-10">
-          {/* Line break 
-          <hr className="shadow" />
-          
-          */}
-
           {/* Footer Elements */}
-          <div className="flex flex-col lg:flex-row w-full justify-between gap-8">
+          <div className="w-full flex flex-col lg:flex-row justify-between gap-8 items-center lg:items-start text-center lg:text-left"> 
             {/* YMT logo link to home*/}
-            <div className="flex flex-col items-start gap-2">
+            <div className="flex flex-col gap-2">
               <Link href="/">
                 <div className="flex flex-row items-center gap-2">
                   <Image
@@ -36,14 +31,14 @@ const Footer = () => {
             </div>
 
             {/* Navigation Menu */}
-            <div className="regular-16 flex flex-col gap-2">
+            <div className="regular-16 flex flex-col gap-2 ">
               <p className="font-bold text-2xl text-gray-10 mb-1">Menu</p>
               <ul className="h-full gap-3 flex flex-col ">
                 {NAV_LINKS.map((link) => (
                   <Link
                     href={link.href}
                     key={link.key}
-                    className="text-lg flex transition-all hover:font-bold"
+                    className="text-lg  transition-all hover:font-bold"
                   >
                     {link.label}
                   </Link>
@@ -52,7 +47,7 @@ const Footer = () => {
             </div>
 
             {/* Media Icons */}
-            <div className="flex flex-col gap-2 regular-16 ">
+            <div className="flex flex-col gap-2 regular-16">
               <p className="text-2xl font-bold text-gray-10 mb-1">Follow Us</p>
               <ul className="flex flex-row gap-2 ">
                 {MEDIA_ICONS.map((media) => (
@@ -78,7 +73,17 @@ const Footer = () => {
                 <p className="text-lg">📧 ymtliondance@outlook.com</p>
               </div>
             </div>
+            
           </div>
+          
+          {/* Sign Up Form */}
+            <div className="flex lg:flex-col gap-2 items-center justify-center">
+              <a href="https://forms.gle/XpGNWQ5CCeqXA3ci9" target="_blank" className="text-lg font-medium text-blue-500 hover:underline">
+                Looking to join our team? Fill out our registration form today!
+              </a>
+            </div>
+
+          {/* Footer Bottom */}
           <hr className="opacity-20" />
           <div className="self-ad w-full flex items-center justify-center ">
             <p>
