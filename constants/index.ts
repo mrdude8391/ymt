@@ -4,6 +4,7 @@ export const NAV_LINKS = [
   { href: "/about", key: "about_us", label: "About Us" },
   { href: "/lions", key: "lions", label: "Meet the Lions" },
   { href: "/media", key: "media", label: "Media" },
+  { href:"https://forms.gle/XpGNWQ5CCeqXA3ci9", key: "join", label: "Join Us" },
   // { href: '/schedule', key: 'schedule', label: 'Schedule' },
 ];
 
