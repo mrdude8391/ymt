@@ -9,7 +9,10 @@ import {
   useFadeInUpDelay,
 } from "@/constants/motionVariants";
 
-const Hero = () => {
+const HomePageHero = () => {
+
+  const groupPhotoLink = "/Sep_2026/GrandOpening-GroupPhoto.JPG";
+
   return (
     <section>
       <AnimatePresence>
@@ -91,6 +94,7 @@ const Hero = () => {
               ))}
             </div>
           </motion.div>
+
           {/* Group Photo */}
           <motion.div
             variants={useFadeInUpDelay(0.25)}
@@ -98,7 +102,7 @@ const Hero = () => {
             whileInView="show"
             viewport={{ once: true, margin: "-75px" }}
           >
-            <img src="/group.jpg" alt="group photo"></img>
+            <img src={groupPhotoLink} alt="group photo"></img>
           </motion.div>
         </motion.div>
       </AnimatePresence>
@@ -106,4 +110,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HomePageHero;
