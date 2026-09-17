@@ -4,7 +4,11 @@ export const NAV_LINKS = [
   { href: "/about", key: "about_us", label: "About Us" },
   { href: "/lions", key: "lions", label: "Meet the Lions" },
   { href: "/media", key: "media", label: "Media" },
-  { href:"https://forms.gle/XpGNWQ5CCeqXA3ci9", key: "join", label: "Join Us" },
+  {
+    href: "https://forms.gle/XpGNWQ5CCeqXA3ci9",
+    key: "join",
+    label: "Join Us",
+  },
   // { href: '/schedule', key: 'schedule', label: 'Schedule' },
 ];
 
@@ -128,4 +132,18 @@ export const LOGOS = [
   { name: "rogers", image: "/logos/rogers.png" },
   { name: "salesforce", image: "/logos/salesforce.png" },
   { name: "snapchat", image: "/logos/snapchat.png" },
+];
+
+export const PHOTOS_2026 = [
+  { src: "/Sep_2026/1.jpg", alt: "Photo 1" },
+  { src: "/Sep_2026/2.jpg", alt: "Photo 2" },
+  { src: "/Sep_2026/3.jpg", alt: "Photo 3" },
+  { src: "/Sep_2026/4.jpg", alt: "Photo 4" },
+  { src: "/Sep_2026/5.jpg", alt: "Photo 5" },
+  { src: "/Sep_2026/6.jpg", alt: "Photo 6" },
+  { src: "/Sep_2026/7.jpg", alt: "Photo 7" },
+  { src: "/Sep_2026/8.jpg", alt: "Photo 8" },
+  { src: "/Sep_2026/9-TheWell.jpg", alt: "Photo 9" },
+  { src: "/Sep_2026/10-StacktMarket-0.jpg", alt: "Photo 10" },
+  { src: "/Sep_2026/11-StacktMarket-1.jpg", alt: "Photo 11" },
 ];
