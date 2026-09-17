@@ -65,7 +65,7 @@ const MainLions = () => {
     <div className="main-lions-container flexCenter flex-col">
       <h2 className="bold-32">Main Lions</h2>
       <div className="lion-cards-container flex flex-col flex-initial justify-center">
-        <ul className="flex justify-evenly flex-col flex-wrap lg:grid-cols-1 gap-16 my-10">
+        <ul className="flex lg:grid justify-evenly flex-col flex-wrap lg:grid-cols-3 gap-16 my-10">
           {HEADSHOTS.map((lion) => (
             <LionPic key={lion.name} lion={lion} />
           ))}
@@ -80,7 +80,7 @@ const LEDLions = () => {
     <div className="led-lions-container flexCenter flex-col">
       <h2 className="bold-32">LED Lions</h2>
       <div className="lion-cards-container flex flex-col flex-initial justify-center">
-        <ul className="flex justify-evenly flex-col flex-wrap lg:grid-cols-1 gap-16 my-10">
+        <ul className="flex lg:grid justify-evenly flex-col flex-wrap lg:grid-cols-3 gap-16 my-10">
           {HEADSHOTS_LED.map((lion) => (
             <LionPic key={lion.name} lion={lion} />
           ))}
