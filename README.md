@@ -2,7 +2,7 @@
 
 ## 📃 Description
 
-YMT Booking site is a React NextJS web app that allows clients to book the YMT Lion Dance team for events. The site also contains information about the Lion dance culture and history, and information about the team. I built this project from the ground up - from designing, developing, and deploying a seamless user experience that educates visitors about the the team and eventually scheduling performances.\
+YMT Booking site is a React NextJS web app that allows clients to book the YMT Lion Dance team for events. The site also contains information about the Lion dance culture and history, and information about the team. I built this project from the ground up - from designing, developing, and deploying a seamless user experience that educates visitors about the the team and eventually scheduling performances.
 
 
 ## 🖼️ Demo
