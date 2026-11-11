@@ -1,13 +1,15 @@
 "use client";
 
 import React, { useRef } from "react";
+import { useRouter } from "next/navigation";
 import emailjs from "@emailjs/browser";
 
 // Manually toggle: true = send to the test EmailJS service, false = production service
-const TEST_MODE = false;
+const TEST_MODE = true;
 
 const BookingForm = () => {
   const form = useRef<HTMLFormElement>(null);
+  const router = useRouter();
 
   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
   const testServiceId = process.env.NEXT_PUBLIC_TEST_SERVICE_ID;
@@ -27,7 +29,7 @@ const BookingForm = () => {
     throw new Error("Missing EmailJS key environment variables.");
   }
 
-  const getServiceId = (): string => 
+  const getServiceId = (): string =>
     TEST_MODE && testServiceId ? testServiceId : serviceId;
 
   const sendEmail = (e: React.FormEvent) => {
@@ -42,10 +44,8 @@ const BookingForm = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          alert(
-            "Booking request sent! A YMT member will follow up as soon as possible.",
-          );
           form.current?.reset();
+          router.push("/booking/confirmation");
         },
         (error) => {
           console.log("FAILED...", error.text);
