@@ -3,15 +3,22 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+// Manually toggle: true = send to the test EmailJS service, false = production service
+const TEST_MODE = false;
+
 const BookingForm = () => {
   const form = useRef<HTMLFormElement>(null);
 
   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const testServiceId = process.env.NEXT_PUBLIC_TEST_SERVICE_ID;
   const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
   const publicKey = process.env.NEXT_PUBLIC_KEY;
 
   if (!serviceId) {
     throw new Error("Missing EmailJS Service ID environment variables.");
+  }
+  if (process.env.NODE_ENV === "development" && !testServiceId) {
+    throw new Error("Missing EmailJS Test Service ID environment variables.");
   }
   if (!templateId) {
     throw new Error("Missing EmailJS template ID environment variables.");
@@ -20,13 +27,16 @@ const BookingForm = () => {
     throw new Error("Missing EmailJS key environment variables.");
   }
 
+  const getServiceId = (): string => 
+    TEST_MODE && testServiceId ? testServiceId : serviceId;
+
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!form.current) return;
 
     emailjs
-      .sendForm(serviceId, templateId, form.current, {
+      .sendForm(getServiceId(), templateId, form.current, {
         publicKey: publicKey,
       })
       .then(
