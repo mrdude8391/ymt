@@ -49,7 +49,7 @@ const page = () => {
                     </div>
                     <ul className="events-list">
                       {day.events.map((event) => (
-                        <Event key={event.time} event={event} />
+                        <Event  event={event} />
                       ))}
                     </ul>
                   </li>
@@ -79,7 +79,7 @@ const Event = (props: { event: EventProps }) => {
   return (
     <>
       {/* Desktop Screens > lg size */}
-      <li className="hidden lg:grid grid-cols-2 lg:grid-cols-5 event-container border-t border-t-white/10 pt-2 pb-4 font-[spartan] ">
+      <li key={event.time} className="hidden lg:grid grid-cols-2 lg:grid-cols-5 event-container border-t border-t-white/10 pt-2 pb-4 font-[spartan] ">
         <p className="text-2xl col-span-2">{event.location}</p>
         <p className="text-lg font-light">
           {date.toLocaleDateString("en-US", {
@@ -93,7 +93,7 @@ const Event = (props: { event: EventProps }) => {
       </li>
 
       {/* Mobile Screens < lg size */}
-      <li className="grid grid-cols-3 lg:hidden event-container border-t border-t-gray-90 pt-2 pb-4 font-[spartan] ">
+      <li key={event.time} className="grid grid-cols-3 lg:hidden event-container border-t border-t-gray-90 pt-2 pb-4 font-[spartan] ">
         <div className="col-span-2">
           <h4 className="font-semibold">{event.location}</h4>
           <OpenInMapsButton address={event.address}></OpenInMapsButton>

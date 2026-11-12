@@ -51,7 +51,7 @@ const Footer = () => {
               <p className="text-2xl font-bold text-gray-10 mb-1">Follow Us</p>
               <ul className="flex flex-row gap-2 ">
                 {MEDIA_ICONS.map((media) => (
-                  <div className="bg-gray-10 p-[1px] rounded-lg">
+                  <li key={media.name} className="bg-gray-10 p-[1px] rounded-lg">
                     <Link href={media.link}>
                       <Image
                         src={media.icon}
@@ -60,7 +60,7 @@ const Footer = () => {
                         height={28}
                       ></Image>
                     </Link>
-                  </div>
+                  </li>
                 ))}
               </ul>
             </div>
