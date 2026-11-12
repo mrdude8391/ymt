@@ -149,3 +149,15 @@ p {
     @apply text-[16px] font-[700];
   } */
 }
+
+/* Fades the edges of the client logo marquee */
+.marquee-fade {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-fade {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}

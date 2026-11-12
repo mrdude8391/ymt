@@ -121,17 +121,68 @@ export const HEADSHOTS_LED = [
   },
 ];
 
-export const LOGOS = [
-  // { name: 'aritizia', image: '/logos/arizia.png'},
-  { name: "bay", image: "/logos/bay.jpg" },
-  { name: "cbc", image: "/logos/cbc.webp" },
-  // { name: 'lcbo', image: '/logos/lcbo.svg'},
-  //{ name: 'nofrills', image: '/logos/nofrills.png'},
-  { name: "oxford", image: "/logos/oxford.png" },
-  //{ name: 'pc', image: '/logos/pc.png'},
-  { name: "rogers", image: "/logos/rogers.png" },
-  { name: "salesforce", image: "/logos/salesforce.png" },
-  { name: "snapchat", image: "/logos/snapchat.png" },
+export const CLIENT_CATEGORIES = [
+  "Corporate & Brands",
+  "Malls & Retail",
+  "Schools & Universities",
+  "Media & Culture",
+  "Community & Restaurants",
+] as const;
+
+export type ClientCategory = (typeof CLIENT_CATEGORIES)[number];
+
+export type ClientLogo = {
+  name: string;
+  image: string;
+  category: ClientCategory;
+};
+
+// Past clients, shown in the homepage marquee and the grouped wall on /about.
+// Order within a category is the display order.
+export const LOGOS: ClientLogo[] = [
+  // Corporate & Brands
+  { name: "Google", image: "/logos/google.png", category: "Corporate & Brands" },
+  { name: "Salesforce", image: "/logos/salesforce.png", category: "Corporate & Brands" },
+  { name: "Rogers", image: "/logos/rogers.png", category: "Corporate & Brands" },
+  { name: "Snapchat", image: "/logos/snapchat.png", category: "Corporate & Brands" },
+  { name: "Cozey", image: "/logos/Cozey.png", category: "Corporate & Brands" },
+  { name: "Plexcon", image: "/logos/Plexcon.png", category: "Corporate & Brands" },
+  { name: "Quintessentially", image: "/logos/quintessentially.png", category: "Corporate & Brands" },
+  { name: "Ascend", image: "/logos/ascend.png", category: "Corporate & Brands" },
+  { name: "JSTDRMN", image: "/logos/jstdrmn.png", category: "Corporate & Brands" },
+  { name: "AMPM", image: "/logos/AMPM.png", category: "Corporate & Brands" },
+
+  // Malls & Retail
+  { name: "Yorkdale", image: "/logos/Yorkdale.png", category: "Malls & Retail" },
+  { name: "Oxford Properties", image: "/logos/oxford.png", category: "Malls & Retail" },
+  { name: "The Well", image: "/logos/the_well.png", category: "Malls & Retail" },
+  { name: "Gerrard Square", image: "/logos/Gerrard_Square.png", category: "Malls & Retail" },
+  { name: "Hillcrest Mall", image: "/logos/Hillcrest.png", category: "Malls & Retail" },
+  { name: "Times Square", image: "/logos/times_square.png", category: "Malls & Retail" },
+  { name: "Shoppes on Parkway", image: "/logos/shoppes_parkway.png", category: "Malls & Retail" },
+  { name: "Hudson's Bay", image: "/logos/bay.jpg", category: "Malls & Retail" },
+  { name: "LCBO", image: "/logos/lcbo.png", category: "Malls & Retail" },
+  { name: "No Frills", image: "/logos/no_frills.png", category: "Malls & Retail" },
+  { name: "President's Choice", image: "/logos/PC.png", category: "Malls & Retail" },
+
+  // Schools & Universities
+  { name: "University of Toronto", image: "/logos/UofT.png", category: "Schools & Universities" },
+  { name: "TDSB", image: "/logos/TDSB.png", category: "Schools & Universities" },
+  { name: "DDSB", image: "/logos/ddsb_logo.png", category: "Schools & Universities" },
+  { name: "Upper Canada", image: "/logos/UpperCanada.png", category: "Schools & Universities" },
+
+  // Media & Culture
+  { name: "CBC", image: "/logos/CBC.png", category: "Media & Culture" },
+  { name: "CP24", image: "/logos/CP24_black_logo.png", category: "Media & Culture" },
+  { name: "Royal Ontario Museum", image: "/logos/ROM.png", category: "Media & Culture" },
+  { name: "Casino Rama", image: "/logos/casino_rama.png", category: "Media & Culture" },
+
+  // Community & Restaurants
+  { name: "Chinatown BIA", image: "/logos/Chinatown_bia.png", category: "Community & Restaurants" },
+  { name: "Chinese Cultural Centre", image: "/logos/CCC.png", category: "Community & Restaurants" },
+  { name: "Ching Kwok", image: "/logos/Ching_Kwok.png", category: "Community & Restaurants" },
+  { name: "Sugar Cafe", image: "/logos/sugar_cafe.png", category: "Community & Restaurants" },
+  { name: "Asian Dragon Buffet", image: "/logos/asian_dragon_buffet.png", category: "Community & Restaurants" },
 ];
 
 export const PHOTOS_2026 = [
