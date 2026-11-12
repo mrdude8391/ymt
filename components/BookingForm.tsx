@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import emailjs from "@emailjs/browser";
 
 // Manually toggle: true = send to the test EmailJS service, false = production service
-const TEST_MODE = true;
+const TEST_MODE = false;
 
 const BookingForm = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -29,8 +29,13 @@ const BookingForm = () => {
     throw new Error("Missing EmailJS key environment variables.");
   }
 
-  const getServiceId = (): string =>
-    TEST_MODE && testServiceId ? testServiceId : serviceId;
+  const getServiceId = (): string => {
+    if (process.env.NODE_ENV === "development") {
+      return TEST_MODE && testServiceId ? testServiceId : serviceId;
+    } else {
+      return serviceId;
+    }
+  };
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
