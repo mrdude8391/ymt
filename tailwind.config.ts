@@ -44,6 +44,16 @@ const config: Config = {
         pattern: "url('/pattern.png')",
         'pattern-2': "url('/red-drag.png')",
       },
+      keyframes: {
+        marquee: {
+          from: { transform: 'translateX(0)' },
+          // -50% of the doubled track, minus half a gap so the seam lines up
+          to: { transform: 'translateX(calc(-50% - 0.5rem))' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 60s linear infinite',
+      },
       screens: {
         xs: '400px',
         '3xl': '1680px',

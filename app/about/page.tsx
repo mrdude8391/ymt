@@ -7,6 +7,7 @@ import {
   fadeInRight,
 } from "@/constants/motionVariants";
 import YTVideo from "@/components/YTVideo";
+import ClientWall from "@/components/ClientWall";
 
 const about = () => {
   return (
@@ -73,6 +74,10 @@ const about = () => {
             </p>
           </motion.div>
         </div>
+
+        <motion.div variants={fadeInRight}>
+          <ClientWall />
+        </motion.div>
       </motion.div>
     </AnimatePresence>
   );

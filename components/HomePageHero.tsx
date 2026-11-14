@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { LOGOS } from "@/constants";
+import LogoMarquee from "@/components/LogoMarquee";
 import {
   staggerContainer,
   fadeInUp,
@@ -70,29 +70,8 @@ const HomePageHero = () => {
           </motion.div>
 
           {/* Previous Clients */}
-          <motion.div variants={fadeInUp} className="flex flex-col gap-8 mb-8">
-            <p className="mb-2 font-semibold text-center text-gold-100">
-              Join our satisfied clients!
-            </p>
-            <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 ">
-              {LOGOS.map((link, idx) => (
-                <div
-                  key={idx}
-                  className="relative h-12 w-auto my-4 flex items-center justify-center"
-                >
-                  <Image
-                    width={100}
-                    height={100}
-                    src={link.image}
-                    alt={link.name}
-                    onLoadingComplete={(img) => {
-                      const imageRatio = img.naturalWidth / img.naturalHeight;
-                      img.style.width = `${Math.pow(imageRatio, 0.525) * 60}px`;
-                    }}
-                  ></Image>
-                </div>
-              ))}
-            </div>
+          <motion.div variants={fadeInUp} className="w-full mb-8">
+            <LogoMarquee />
           </motion.div>
 
           {/* Group Photo */}
