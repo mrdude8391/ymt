@@ -104,7 +104,7 @@ export const HEADSHOTS = [
   {
     name: "H",
     colors: "Black/Gold",
-    image: "/YMT Lions/headshots/yellow_gold_black.jpg",
+    image: "/YMT Lions/headshots/black_gold.jpg",
   },
 ];
 
