@@ -151,6 +151,8 @@ export const LOGOS: ClientLogo[] = [
   { name: "Ascend", image: "/logos/ascend.png", category: "Corporate & Brands" },
   { name: "JSTDRMN", image: "/logos/jstdrmn.png", category: "Corporate & Brands" },
   { name: "AMPM", image: "/logos/AMPM.png", category: "Corporate & Brands" },
+  { name: "Casino Rama", image: "/logos/casino_rama.png", category: "Corporate & Brands" },
+
 
   // Malls & Retail
   { name: "Yorkdale", image: "/logos/Yorkdale.png", category: "Malls & Retail" },
@@ -160,7 +162,6 @@ export const LOGOS: ClientLogo[] = [
   { name: "Hillcrest Mall", image: "/logos/Hillcrest.png", category: "Malls & Retail" },
   { name: "Times Square", image: "/logos/times_square.png", category: "Malls & Retail" },
   { name: "Shoppes on Parkway", image: "/logos/shoppes_parkway.png", category: "Malls & Retail" },
-  { name: "Hudson's Bay", image: "/logos/bay.jpg", category: "Malls & Retail" },
   { name: "LCBO", image: "/logos/lcbo.png", category: "Malls & Retail" },
   { name: "No Frills", image: "/logos/no_frills.png", category: "Malls & Retail" },
   { name: "President's Choice", image: "/logos/PC.png", category: "Malls & Retail" },
@@ -175,7 +176,6 @@ export const LOGOS: ClientLogo[] = [
   { name: "CBC", image: "/logos/CBC.png", category: "Media & Culture" },
   { name: "CP24", image: "/logos/CP24_black_logo.png", category: "Media & Culture" },
   { name: "Royal Ontario Museum", image: "/logos/ROM.png", category: "Media & Culture" },
-  { name: "Casino Rama", image: "/logos/casino_rama.png", category: "Media & Culture" },
 
   // Community & Restaurants
   { name: "Chinatown BIA", image: "/logos/Chinatown_bia.png", category: "Community & Restaurants" },
