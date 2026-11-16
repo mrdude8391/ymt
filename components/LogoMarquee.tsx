@@ -22,7 +22,7 @@ const LogoMarquee = () => {
                 aria-hidden={isDuplicate || undefined}
                 className={isDuplicate ? "motion-reduce:hidden" : undefined}
               >
-                <ClientLogo logo={logo} className="h-16 w-32" loading="eager" />
+                <ClientLogo logo={logo} className="h-24 w-24" loading="eager" />
               </li>
             );
           })}
