@@ -20,10 +20,10 @@ const ClientWall = () => {
         return (
           <div key={category} className="flex flex-col gap-4">
             <h3 className="text-2xl text-white">{category}</h3>
-            <ul className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <ul className="grid grid-cols-3 xs:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
               {logos.map((logo) => (
                 <li key={logo.image}>
-                  <ClientLogo logo={logo} className="h-24 w-full" />
+                  <ClientLogo logo={logo} className="aspect-square w-full" />
                 </li>
               ))}
             </ul>

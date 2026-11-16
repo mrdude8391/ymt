@@ -14,7 +14,7 @@ type Props = {
 // and evens out logos that arrive with their own white backgrounds.
 const ClientLogo = ({ logo, className = "", loading = "lazy" }: Props) => (
   <div
-    className={`relative flex items-center justify-center bg-white rounded-lg p-0 ${className}`}
+    className={`relative flex items-center justify-center bg-white rounded-lg p-2 ${className}`}
     title={logo.name}
   >
     <div className="relative w-full h-full">
