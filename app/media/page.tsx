@@ -30,7 +30,7 @@ const page = () => {
           </div>
           <ul className="max-container padding-container flex flex-col gap-16 my-10 ">
             {MEDIA_VIDEOS.map((video) => (
-              <YTVideo title={video.title} src={video.src} />
+              <YTVideo key={video.title} title={video.title} src={video.src} />
             ))}
           </ul>
         </section>
