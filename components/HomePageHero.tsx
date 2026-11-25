@@ -10,7 +10,6 @@ import {
 } from "@/constants/motionVariants";
 
 const HomePageHero = () => {
-
   const groupPhotoLink = "/Sep_2026/GrandOpening-GroupPhoto.JPG";
 
   return (
@@ -48,15 +47,20 @@ const HomePageHero = () => {
             </h2>
 
             <p className="text-justify ">
-              YMT Toronto Lion Dance – Yi Mo Tong is a team with a rich legacy
-              in the art of lion dance, building on over 25 years of experience.
-              For the past decade, we established a blend of athleticism and
-              artistry, aimed at spreading cultural awareness and inspiring new
-              generations to embrace this ancient tradition. We celebrated a
-              major milestone by securing 3rd place at the prestigious 2024
-              Canada National Competition. As we look to the future, our sights
-              are set on competing internationally and to elevate both the sport
-              and the cultural significant of Lion Dance in Canada.
+              Yi Mo Tong (YMT) Lion Dance brings together over 25 years of
+              combined experience, blending Chinese tradition with athleticism
+              and artistry. In 2026, we secured 2nd place at the Canadian
+              National Lion Dance Championship and in 2024 secured 3rd. We are
+              passionate about elevating lion dance as both a competitive sport
+              and a vital part of Canada's multicultural heritage. From grand
+              openings and corporate events to weddings and cultural
+              celebrations, YMT brings energy, tradition, and good fortune to
+              every occasion. 
+              <br/>Competitions:
+              <br/>2024 - 3rd Place Canada National Competition
+              <br/>2026 - 2nd Place Canada National Competition
+              <br/>2026 - 4th Place Can-American International Championship
+              <br/>2026 - 6th Place Pan-American International Competition
             </p>
           </motion.div>
 
