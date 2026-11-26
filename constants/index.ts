@@ -51,24 +51,6 @@ export const MEDIA_VIDEOS = [
   },
 ];
 
-// export const LIONS = [
-
-//   { name: 'A' , colors: "Red/Silver", image: '/YMT Lions/LionProfiles/red_silver.jpg'},
-//   { name: 'B' , colors: "Red/Gold", image: '/YMT Lions/LionProfiles/red_gold.jpeg'},
-//   { name: 'C' , colors: "Red/Gold + Black", image: '/YMT Lions/LionProfiles/red_gold_black.png'},
-//   { name: 'D' , colors: "Yellow/Gold", image: '/YMT Lions/LionProfiles/yellow_gold.jpeg'},
-//   { name: 'E' , colors: "Yellow/Gold + Black", image: '/YMT Lions/LionProfiles/yellow_gold_black.png'},
-//   { name: 'F' , colors: "White/Gold", image: '/YMT Lions/LionProfiles/white_gold.jpeg'},
-//   { name: 'G' , colors: "White/Purple", image: '/YMT Lions/LionProfiles/white_purple.jpeg'},
-//   { name: 'H' , colors: "Black/Gold", image: '/YMT Lions/LionProfiles/black_yellow.jpeg'},
-
-// ]
-
-// export const LEDLIONS = [
-//   { name: 'L1', colors: 'White/Blue', image: '/YMT Lions/LionProfiles/LED_white_blue.png'},
-//   { name: 'L2', colors: 'White/Green', image: '/YMT Lions/LionProfiles/LED_white_green.jpg'}
-// ]
-
 export const HEADSHOTS = [
   {
     name: "A",
@@ -120,6 +102,74 @@ export const HEADSHOTS_LED = [
     image: "/YMT Lions/headshots/white_green.jpg",
   },
 ];
+
+export const LION_PORTRAITS = [
+  {
+    name: "A",
+    colors: "Black",
+    image: "/media/lions/portraits/black.jpg",
+  },
+  {
+    name: "B",
+    colors: "Black/Red",
+    image: "/media/lions/portraits/black_red.jpg",
+  },
+  {
+    name: "C",
+    colors: "Orange",
+    image: "/media/lions/portraits/orange.jpg",
+  },
+  {
+    name: "D",
+    colors: "Pink/Black (Blink)",
+    image: "/media/lions/portraits/pink_black_blink.jpg",
+  },
+  {
+    name: "D",
+    colors: "Red",
+    image: "/media/lions/portraits/red.jpg",
+  },
+  {
+    name: "E",
+    colors: "Red/Black",
+    image: "/media/lions/portraits/red_black.jpg",
+  },
+  {
+    name: "F",
+    colors: "Red/Silver",
+    image: "/media/lions/portraits/red_silver.jpg",
+  },
+  {
+    name: "G",
+    colors: "Red/Water (Spyro)",
+    image: "/media/lions/portraits/red_water_spyro.jpg",
+  },
+  {
+    name: "H",
+    colors: "White",
+    image: "/media/lions/portraits/white.jpg",
+  },
+  {
+    name: "I",
+    colors: "White/Gold",
+    image: "/media/lions/portraits/white_gold.jpg",
+  },
+  {
+    name: "J",
+    colors: "White/Purple",
+    image: "/media/lions/portraits/white_purple.jpg",
+  },
+  {
+    name: "K",
+    colors: "Yellow",
+    image: "/media/lions/portraits/yellow.jpg",
+  },
+  {
+    name: "L",
+    colors: "Yellow/Black",
+    image: "/media/lions/portraits/yellow_black.jpg",
+  },
+]
 
 export const CLIENT_CATEGORIES = [
   "Corporate & Brands",

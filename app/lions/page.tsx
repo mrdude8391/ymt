@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { HEADSHOTS, HEADSHOTS_LED } from "@/constants";
+import { HEADSHOTS, HEADSHOTS_LED, LION_PORTRAITS } from "@/constants";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useFadeInRightDelay } from "@/constants/motionVariants";
@@ -66,7 +66,7 @@ const MainLions = () => {
       <h2 className="bold-32">Main Lions</h2>
       <div className="lion-cards-container flex flex-col flex-initial justify-center">
         <ul className="flex lg:grid justify-evenly flex-col flex-wrap lg:grid-cols-3 gap-16 my-10">
-          {HEADSHOTS.map((lion) => (
+          {LION_PORTRAITS.map((lion) => (
             <LionPic key={lion.name} lion={lion} />
           ))}
         </ul>
