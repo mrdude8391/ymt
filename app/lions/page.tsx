@@ -67,7 +67,7 @@ const MainLions = () => {
       <div className="lion-cards-container flex flex-col flex-initial justify-center">
         <ul className="flex lg:grid justify-evenly flex-col flex-wrap lg:grid-cols-3 gap-16 my-10">
           {HEADSHOTS.map((lion) => (
-            <LionPic  lion={lion} />
+            <LionPic key={lion.name} lion={lion} />
           ))}
         </ul>
       </div>
