@@ -51,45 +51,6 @@ export const MEDIA_VIDEOS = [
   },
 ];
 
-export const HEADSHOTS = [
-  {
-    name: "A",
-    colors: "Red/Silver",
-    image: "/YMT Lions/headshots/red_silver.jpg",
-  },
-  { name: "B", colors: "Red/Gold", image: "/YMT Lions/headshots/red_gold.jpg" },
-  {
-    name: "C",
-    colors: "Red/Gold + Black",
-    image: "/YMT Lions/headshots/red_gold_black.jpg",
-  },
-  {
-    name: "D",
-    colors: "Yellow/Gold",
-    image: "/YMT Lions/headshots/yellow_gold.jpg",
-  },
-  {
-    name: "E",
-    colors: "Yellow/Gold + Black",
-    image: "/YMT Lions/headshots/yellow_gold_black.jpg",
-  },
-  {
-    name: "F",
-    colors: "White/Gold",
-    image: "/YMT Lions/headshots/white_gold.jpg",
-  },
-  {
-    name: "G",
-    colors: "White/Purple",
-    image: "/YMT Lions/headshots/white_purple.jpg",
-  },
-  {
-    name: "H",
-    colors: "Black/Gold",
-    image: "/YMT Lions/headshots/black_gold.jpg",
-  },
-];
-
 export const HEADSHOTS_LED = [
   {
     name: "L1",
